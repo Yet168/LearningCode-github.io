@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearningCode</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.rateyo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" />
+	<link rel="stylesheet" type="text/css" href="inner-page-style.css">
+    <link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Battambang&display=swap" />
+	<link rel="shorcut icon" type="x-icon" href="images/Logo/logo4.png" style="height: 100px;">
+</head>
+<body>
+	<div id="page" class="site">
+			<header class="site-header">
+				<div class="main-header">
+					<div class="container">
+						<div class="logo-wrap" itemprop="logo">
+							<h2>សិក្សាគ្រឺះកូដនៅទីនេះ</h2>
+						</div>
+						<div class="nav-wrap">
+							<nav class="nav-desktop">
+								<ul class="menu-list">
+									<li><a href="/">ទំព័រដើម</a></li>
+									<li class="menu-parent">បណ្ដុំនៃមេរៀន
+										<ul class="sub-menu">
+											<li><a href="./course-listing.html">មេរៀនទាំងអស់</a></li>
+											<li><a href="./course-single.html">មេរៀនឥតគិតថ្លៃ</a></li>
+											<!-- <li class="menu-parent">Child
+												<ul class="sub-menu">
+													<li><a href="#">Grand-child</a></li>
+													<li><a href="#">Grand-child</a></li>
+												</ul>
+											</li> -->
+										</ul>
+									</li>
+									<!-- <li class="menu-parent">News
+										<ul class="sub-menu">
+											<li><a href="./events.html">Child</a></li>
+											<li><a href="./blog.html">Child</a></li>
+										</ul>
+									</li> -->
+									<!-- <li class="menu-parent">គម្រងរូបភាព
+										<ul class="sub-menu"> -->
+											<!-- <li><a href="#">Grand-child</a></li> -->
+											<!-- <li><a href="./gallery2.html">រូបភាព</a></li>
+										</ul> -->
+									</li>
+									<li><a href="./blog-edu-single.html">ព័ត៍មានទូទៅ</a></li>
+									<li><a href="./testimonials.html">ទំនាក់ទំនង</a></li>
+								</ul>
+							</nav>
+							<div id="bar">
+								<i class="fas fa-bars"></i>
+							</div>
+							<div id="close">
+								<i class="fas fa-times"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+	</div>
+
+    <div class="containers">
+        <!-- Sidebar -->
+        <div class="sidebars">
+            <h2>មេរៀនទី១៖ CSS</h2>
+            <ul>
+				<li onclick="showLesson('lesson5')">សាកល្បងសរសេរកូដ</li>
+                <li onclick="showLesson('lesson1')">ការណែនាំអំពី CSS</li>
+                <li onclick="showLesson('lesson2')">CSS Selector</li>
+                <li onclick="showLesson('lesson3')">របៀបក្នុងការ​ add CSS</li>
+				<li onclick="showLesson('lesson4')">CSS Comment</li>
+            </ul>
+        </div>
+
+        <!-- Content -->
+        <div class="contents">
+            <div id="lesson1" class="lessons">
+                <h3>១/ ការណែនាំអំពី CSS</h3><h3>១.១/ អ្វីទៅជា CSS</h3><br>
+                <p>ពាក្យពេញរបស់ CSS គឺ <q>Cascading Style Sheets</q> ប្រើប្រាស់សម្រាប់កំណត់ Style(color,layout,font...ect) អោយ Web page ដើម្បីមើលកាន់តែទាក់ទាញ នឹងស្រស់ស្អាត។<br><br><hr>
+				<h3>១.២/ CSS Syntax</h3><br>
+                <p>CSS rule ត្រូវមាន selector នឹង declaration block</p>
+                <div class="container">
+					<div class="code-block">
+						p {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 20px;<br>}<br>
+					</div>
+				</div><br>
+                <P>
+                    * p ជា selector នៅក្នុង CSS.វា​ Point ទៅ HTML Element &lt;p&gt; ដែលយើងចង់កំណត់ style អោយ<br>
+					* Declaration block អាចមានមួយឬច្រើន declaration ដែល separate ដោយ semicolon ();<br>
+					* Declaration នីមួយៗមានផ្ទុកឈ្មោះ CSS Property នឹង value ដែល separate ដោយ​ colon (:)<br>
+					* color ជា CSS property។ red ជា property value<br>
+					* font-size ជា CSS property។20px ជា property value<br>
+					លទ្ទផលនៅក្នុងឧទាហរណ៍ខាងលើគឺ៖​ គ្រប់ &lt;p&gt; Element មានពណ៍ក្រហម និងទំហំអក្សរ 20pixel។
+                </P>
+                <br><hr>
+            </div>
+            <div id="lesson2" class="lessons">
+                <h3>២/ CSS Selector <br> ២.១/ អត្តន័យ</h3><br>
+                <p>CSS Selector ប្រើប្រាស់សម្រាប់រើសយក HTML Element(s) ណាមួយដែលអ្នកចង់កំណត់ style អោយវា។</p>
+				<br><hr>
+				<h3>២.២/ ប្រភេទ CSS Selector ចែកចេញជា៥៖</h3><br>
+				<p>
+					* Simple selector: Select element អាស្រ័យលើ name, id, class<br>* Combinator selector: Select element អាស្រ័យលើ specific relationship between them<br>* Pseudo-classselectors: select element based on a certain state<br>* Pseudo-element selectors: select and style a part of an element<br>* Attribute selectors: select element based on an attribute or attribute value<br>
+				</p>
+				<br><hr>
+				<h3>២.៣/ Simple Selector </h3><br>
+				<p>* CSS element name selector: អាស្រ័យលើឈ្មោះ element(s)</p>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">&lt;!DOCTYPE html&gt;</span><br>
+						<span class="code-tag">&lt;html&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><span class="code-text">Hello World</span><span class="code-tag">&lt;/title&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;style&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">body {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: powderblue;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1 {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: green;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 22px;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;/style&gt;<br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;p&gt;</span><span class="code-text">Rean Nv Nis Mk!!</span><span class="code-tag">&lt;/p&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><br>
+						<span class="code-tag">&lt;/html&gt;</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><h2 style="color: red;">Hello, World!</h1><br><p style="color: green;font-size: 22px;">Rean Nv Nis Mk!!</p></pre>
+				</div><br>
+				<p>* CSS id selector: ប្រើ id attribute របស់ HTML element។ id របស់ element។ id របស់​​ element មួយគឺ unique នៅក្នុង page។ដូច្នេះ id selector ត្រូវបានប្រើប្រាស់ដើម្បី select unique element។<br>* ប្រើ hash (#) ដើម្បី select element ជាមួយ specific id</p>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">&lt;!DOCTYPE html&gt;</span><br>
+						<span class="code-tag">&lt;html&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><span class="code-text">Hello World</span><span class="code-tag">&lt;/title&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;style&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">#id2{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: powderblue;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#id2{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#id3{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: green;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 22px;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#description{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 22px;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: gray<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;/style&gt;<br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2 id="id1"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2 id="id2"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h3 id="id3"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h3&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;p id="description"&gt;</span><span class="code-text">Rean Nv Nis Mk!!</span><span class="code-tag">&lt;/p&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><br>
+						<span class="code-tag">&lt;/html&gt;</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><h2 style="color: powderblue;">Hello, World!</h2><br><h2 style="color: red;">Hello, World!</21><br><h2 style="color: green;font-size: 22px;">Hello, World!</h1><br><p style="color: white; font-size: 22px; background-color: gray;">Rean Nv Nis Mk!!</p></pre>
+				</div><br>
+				<p>* CSS class selector: ប្រើ class attribute របស់ HTML element។<br>* ប្រើប្រាស់ period (.) ដើម្បី select element ជាមួយ specific class</p>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">&lt;!DOCTYPE html&gt;</span><br>
+						<span class="code-tag">&lt;html&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><span class="code-text">Hello World</span><span class="code-tag">&lt;/title&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;style&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">.class_name1{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.id1{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.description{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 22px;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: gray<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;/style&gt;<br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2 class="class_name1"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2 class="class_name1"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h3 id="id1"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h3&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;p class="description"&gt;</span><span class="code-text">Rean Nv Nis Mk!!</span><span class="code-tag">&lt;/p&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><br>
+						<span class="code-tag">&lt;/html&gt;</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><h2 style="color: blue">Hello, World!</h2><br><h2 style="color: blue">Hello, World!</21><br><h4 style="color: red;">Hello, World!</h4><br><p style="color: white; font-size: 22px; background-color: gray;">Rean Nv Nis Mk!!</p></pre>
+				</div><br>
+				<p>អ្នកអាចកំណត់ specific HTML element ដែលអាចប្រើជាមួយ class selector នោះ</p>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">&lt;!DOCTYPE html&gt;</span><br>
+						<span class="code-tag">&lt;html&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><span class="code-text">Hello World</span><span class="code-tag">&lt;/title&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;style&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">.class_name1{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p.class_name{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 22px;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: gray<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;/style&gt;<br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2 class="class_name1"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2 class="class_name1"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;p class="class_name1"&gt;</span><span class="code-text">Rean Nv Nis Mk!!</span><span class="code-tag">&lt;/p&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;p class="class_name1"&gt;</span><span class="code-text">Rean Nv Nis Mk!!</span><span class="code-tag">&lt;/p&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><br>
+						<span class="code-tag">&lt;/html&gt;</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><h2 style="color: blue">Hello, World!</h2><br><h2 style="color: blue">Hello, World!</21><br><br><p style="color: white; font-size: 22px; background-color: gray;">Rean Nv Nis Mk!!</p><br><p style="color: white; font-size: 22px; background-color: gray;">Rean Nv Nis Mk!!</p></pre>
+				</div><br>
+				<p>* HTML element អាចប្រើ class selector លើសពីមួយបាន</p>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">&lt;!DOCTYPE html&gt;</span><br>
+						<span class="code-tag">&lt;html&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><span class="code-text">Hello World</span><span class="code-tag">&lt;/title&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;style&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">.color{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: blue;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.large{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 30px;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;/style&gt;<br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;p class="color"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/p&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;p class="color large"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/p&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><br>
+						<span class="code-tag">&lt;/html&gt;</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><p style="color: white;background-color: blue;">Hello, World!</p><br><p style="color: white;background-color: blue;font-size: 30px;">Hello, World!</p></pre>
+				</div><br>
+				<p>* CSS Universal Selector: ប្រើសម្រាប់ដាក់ style នៅលើ HTML element ទាំងអស់ដែលមាននៅក្នុង page ដោយប្រើ (*)</p>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">&lt;!DOCTYPE html&gt;</span><br>
+						<span class="code-tag">&lt;html&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><span class="code-text">Hello World</span><span class="code-tag">&lt;/title&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;style&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">* {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 20px;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.background{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: bisque;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;/style&gt;<br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;p class="background"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/p&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><br>
+						<span class="code-tag">&lt;/html&gt;</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><h2 style="color: blue;font-size: 20px;">Hello, World!</h2><br><p style="background-color: bisque;">Hello, World!</p></pre>
+				</div><br>
+				<p>* CSS id Selector: ប្រើ id attribute របស់ HTML element។id របស់​​ element មួយគឺ unique នៅក្នុង pag។ ដូច្នេះ id selector ត្រូវបានបង្កើតដើម្បី select unique element។</p>
+				<p>* ប្រើ hash (#) ដើម្បី​ select element ជាមួយ specific id</p>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">&lt;!DOCTYPE html&gt;</span><br>
+						<span class="code-tag">&lt;html&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><span class="code-text">Hello World</span><span class="code-tag">&lt;/title&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;style&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">#id1{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: hotpink<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.#id2{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.#id3{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: green;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 22px;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#description{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 22px;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: gray;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;/style&gt;<br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2 id="id1"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2 id="id2"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h3 id="id3"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h3&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;p id="description"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/p&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><br>
+						<span class="code-tag">&lt;/html&gt;</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><h2 style="color: hotpink;">Hello, World!</h2><br><h2 style="color: red;">Hello, World!</h2><br><h3 style="color: green;font-size: 22px;">Hello, World!</h3><br><p style="background-color: gray;font-size: 22px;color: white;">Hello, World!</p></pre>
+				</div><br>
+				<p>* CSS class selector: ប្រើ class attribute របស់ HTML element.</p><br>
+				<p>* ប្រើ period (.) ដើម្បី select element ជាមួយ specific class</p>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">&lt;!DOCTYPE html&gt;</span><br>
+						<span class="code-tag">&lt;html&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><span class="code-text">Hello World</span><span class="code-tag">&lt;/title&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;style&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">.class_name{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.#id1{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.description{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 22px;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: gray;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;/style&gt;<br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2 id="class_name1"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2 id="class_name2"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h3 id="id1"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h3&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;p id="description"&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/p&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><br>
+						<span class="code-tag">&lt;/html&gt;</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><h2 style="color: blue;">Hello, World!</h2><br><h2 style="color: blue;">Hello, World!</h2><br><h3 style="color: red;">Hello, World!</h3><br><p style="background-color: gray;font-size: 22px;color: white;">Hello, World!</p></pre>
+				</div><br>
+				<P>* CSS Grouping Selector: ប្រើសម្រាប់ដាក់ style នៅលើ HTML element ដែលអ្នកចង់ដាក់រួមគ្នាក្នុងគោលបំណងដើម្បី minimize code។ប្រើ comma ដើម្បី separate selector នីមួយៗ។</P>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">&lt;!DOCTYPE html&gt;</span><br>
+						<span class="code-tag">&lt;html&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><span class="code-text">Hello World</span><span class="code-tag">&lt;/title&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;style&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">h2, h3, p{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;/style&gt;<br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h3&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h3&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;p&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/p&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><br>
+						<span class="code-tag">&lt;/html&gt;</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><h2 style="color: red;">Hello, World!</h2><br><h3 style="color: red;">Hello, World!</h3><br><p style="color: red;">Hello, World!</p></pre>
+				</div>
+				<br><hr>
+            </div>
+            <div id="lesson3" class="lessons">
+                <h3>៣/ របៀបក្នុងការ​ add CSS</h3><br>
+                <p style="color: blue;font-size: 20px;">មាន ៣​ វិធីដើម្បី insert a style sheet</p>
+				<p>.External <br> .Internal <br> .Inline</p><br>
+				<p style="color: blue;font-size: 20px;">វិធីទី១៖ External CSS</p>
+				<p>.អាចសរសេរក្នុង text editor ណាមួយក៏បាន <br> .ត្រូវ save ជាមួយ <q style="color: red;">.css</q> extension <br> .External .css file មិនមាន HTML tag ទេ <br> .HTML page ហៅ CSS style sheet មកប្រើតាមរយះការកំណត់ជាមួយ &lt;link&gt; section</p><br><hr>
+				<p style="color: blue;font-size: 20px;">វិធីទី១៖ External CSS</p>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">&lt;!DOCTYPE html&gt;</span><br>
+						<span class="code-tag">&lt;html&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						<div style="border: 2px solid red;">
+							&nbsp;&nbsp;<span class="code-tag">&lt;link rel="stylesheet" href="style.css"&gt;</span><br>
+						</div>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><span class="code-text">Hello World</span><span class="code-tag">&lt;/title&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;p&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/p&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/body&gt;</span><br>
+						<span class="code-tag">&lt;/html&gt;</span>
+					</div>
+				</div>
+				<b>File Style CSS</b>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">body{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: lightblue;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">h2 {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre style="background-color: lightblue;"><br><h2 style="color: blue">Hello, World!</h2><p>Hello World</p></pre>
+				</div>
+				<br><hr>
+				<p style="color: blue;font-size: 20px;">វិធីទី២៖ Internal CSS</p>
+				<p>.ត្រូវបានកំណត់នៅក្នុង &lt;style&gt; element ផ្នែក​ &lt;head&gt; section <br>.នៅពេល HTML page ប្រើ Internal style sheet មានន័យថា​ style នោះអាចប្រើបានតែនៅក្នុង HTML file មួយប៉ុណ្ណោះ។</p>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">&lt;!DOCTYPE html&gt;</span><br>
+						<span class="code-tag">&lt;html&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						<div style="border: 2px solid red;">
+							&nbsp;&nbsp;<span class="code-tag">&lt;style&gt;</span><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">body{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: black;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">h2{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+							&nbsp;&nbsp;<span class="code-tag">&lt;/style&gt;<br>
+						</div>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><span class="code-text">Hello World</span><span class="code-tag">&lt;/title&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/body&gt;</span><br>
+						<span class="code-tag">&lt;/html&gt;</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre style="background-color: black;"><br><h2 style="color: white">Hello, World!</h2></pre>
+				</div>
+				<br><hr>
+				<p style="color: blue;font-size: 20px;">វិធីទី៣៖ Inline CSS</p>
+				<p>.ត្រូវបានកំណត់នៅក្នុង attribute របស់ element។ style attribute អាចមាន CSS property ច្រើន <br>.Inline style ប្រើប្រាស់់សម្រាប់ដាក់ unique style សម្រាប់​ element មួយ។</p>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">&lt;!DOCTYPE html&gt;</span><br>
+						<span class="code-tag">&lt;html&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><span class="code-text">Hello World</span><span class="code-tag">&lt;/title&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2 </span><span class="code-text" style="border: 2px solid red;">style="color: blue;text-align: center;"</span><span class="code-tag">&gt;This is a heading&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;p </span><span class="code-text">style="color: red;margin-left:40px;"</span><span class="code-tag">&gt;This is a heading&lt;/p&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/body&gt;</span><br>
+						<span class="code-tag">&lt;/html&gt;</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><br><h2 style="color: black;text-align: center;">This is a heading</h2><p style="color: red;margin-left: 40px;">This is a heading</p></pre>
+				</div>
+				<br><hr>
+            </div>
+			<div id="lesson4" class="lessons">
+                <h3>៤/ CSS Comment</h3><br>
+                <p>.Comment ប្រើប្រាស់សម្រាប់ពន្យល់ពិពណ៍នាអំពី Source code អាយស្រួលសម្រាប់ខ្លួនឯង នឹង developer ផ្សេងទៀតមក maintaining ពេលក្រោយ<br>.Comment មិនត្រូវបានបង្ហាញនៅលើ browser នោះទេ <br>.Syntax CSS Comment ចាប់ផ្ដើមជាមួយ <b style="color: red;">/*</b> និងបញ្ចប់ជាមួយ <b style="color: red;">*/</b></p>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">&lt;!DOCTYPE html&gt;</span><br>
+						<span class="code-tag">&lt;html&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><span class="code-text">Hello World</span><span class="code-tag">&lt;/title&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;style&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">p {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<b style="border: 2px solid red;color: green;">/* Set text color to red */</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;/style&gt;<br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;body&gt;</span><br>
+						<div style="color: green;">
+							&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;!-- </span><span class="code-text">These paragraphs will be blue</span><span class="code-tag">--&gt;</span><br>
+						</div>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;p&gt;</span><span class="code-text">Rean Nv Nis Mk!!</span><span class="code-tag">&lt;/p&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><br>
+						<span class="code-tag">&lt;/html&gt;</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><br><h2>Hello World!</h2><br><p style="color: blue;">Rean Nv Nis Mk!!</p></pre>
+				</div>
+                <br><hr>
+            </div>
+			<div id="lesson5" class="lessons">        
+    			<div class="editor-container">
+        			<div class="code-block">
+            			<h3 style="color: orange;">សរសេរកូដ HTML</h3>
+            				<textarea id="htmlCode" placeholder="សរសេរ HTML ទីនេះ..."></textarea>
+        			</div>
+        			<div class="code-block">
+            			<h3 style="color: orange;">សរសេរកូដ CSS</h3>
+            				<textarea id="cssCode" placeholder="សរសេរ CSS ទីនេះ..."></textarea>
+        			</div>
+    			</div>
+    				<button onclick="runCode()">បង្ហាញលទ្ធផល</button>
+    				<div class="output-container">
+        				<h3>លទ្ធផលដែលបានបង្ហាញ៖</h3>
+        				<iframe id="output"></iframe>
+    				</div>
+            	</div>
+        	</div>
+    	</div>
+	</div>
+	<!-- Footer Start -->
+	<footer class="page-footer">
+		<div class="footer-first-section">
+			<div class="container">
+				<div class="box-wrap">
+					<header>
+						<h2>អំពី</h2>
+					</header>
+					<p>ប្រសិនជាបងមានចម្ងល់ដែលទាក់ទងជាមួយនឹងគេហទំព័រយើងខ្ញុំអាចទំនាក់ទំនងមកកាន់យើងខ្ញុំបានគ្រប់ពេលវេលា...</p>
+
+					<h4><a href="tel:+855 968675739"><i class="fas fa-phone"></i> +855 968675739</a></h4>
+					<h4><a href="mailto:yet@gmail.com"><i class="fas fa-envelope"></i> yet@gmail.com</a></h4>
+					<h4><i class="fas fa-map-marker-alt"></i>ចោមចៅ2, ពោធិ៍សែនជ័យ, ភ្នំពេញ</h4>
+				</div>
+
+				<div class="box-wrap">
+					<header>
+						<h2>តំណភ្ជាប់</h2>
+					</header>
+					<ul>
+						<li><a href="/">ទំព័រដើម</a></li>
+						<li><a href="/course-listing.html">មេរៀន</a></li>
+						<li><a href="#">Courses</a></li>
+						<li><a href="/blog-edu-single.html">ព័ត៍មានទូទៅ</a></li>
+						<li><a href="/testimonials.html">ទំនាក់ទំនង</a></li>
+					</ul>
+				</div>
+
+				<div class="box-wrap">
+					<header>
+						<h2>មូលដ្ធានគ្រឹះ</h2>
+					</header>
+					<div class="recent-course-wrap">
+						<img src="images/Footer/footer5.png" alt="Ui/Ux Designing">
+						<a href=""><div class="course-name">
+							<h3>ពង្រឹងនូវគ្រឹះកូដយ៉ាងច្បាស់លាស់</h3>
+							<p><span>$50</span> ឥតគិតថ្លៃ</p>
+						</div></a>
+					</div>
+					<div class="recent-course-wrap">
+						<img src="images/Footer/footer3.png" alt="Ui/Ux Designing">
+						<a href=""><div class="course-name">
+							<h3>បណ្ដុំទៅដោយមេរៀនដ៏ពេញនិយម</h3>
+							<p><span>$50</span>ឥតគិតថ្លៃ</p>
+						</div></a>
+					</div>
+				</div>
+
+				<div class="box-wrap">
+					<header>
+						<h2>ទំនាក់ទំនង</h2>
+					</header>
+					<section class="quick-contact">
+						<input type="email" name="email" placeholder="Your Email*">
+						<textarea placeholder="Type your message*"></textarea>
+						<button>send message</button>
+					</section>
+				</div>
+
+			</div>
+		</div>
+		<!-- End of box-Wrap -->
+		<div class="footer-second-section">
+			<div class="container">
+				<hr class="footer-line">
+				<ul class="social-list">
+					<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href=""><i class="fab fa-twitter"></i></a></li>
+					<li><a href=""><i class="fab fa-skype"></i></a></li>
+					<li><a href=""><i class="fab fa-youtube"></i></a></li>
+					<li><a href=""><i class="fab fa-instagram"></i></a></li>
+				</ul>
+				<hr class="footer-line">
+			</div>
+		</div>
+		<!-- <div class="footer-last-section">
+			<div class="container">
+				<p>Copyright 2018 &copy; educationpro.com <span> | </span> Theme designed and developed by <a href="https://labtheme.com">Lab Theme</a></p>
+			</div>
+		</div> -->
+	</footer>
+</div>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="js/jquery.rateyo.js"></script>
+	<script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+    <script src="js/javaScript1.js"></script>
+	<script src="js/javaScript2.js"></script>
+</body>
+</html>

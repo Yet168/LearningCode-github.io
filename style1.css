@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Battambang', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffffff;
+
+}
+
+.editor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+.code-block {
+    width: 100%;
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.code-block h3 {
+    margin: 0;
+    padding: 5px;
+    font-size: 18px;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    font-family: monospace;
+    padding: 10px;
+    border: none;
+    background-color: #f8f4f4;
+    color: #fff;
+    resize: none;
+    overflow: auto;
+    box-sizing: border-box;
+}
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    background: #00ff4c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+}
+button:hover {
+    background: #0056b3;
+}
+.output-container {
+    /* width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: left;
+    box-sizing: border-box;
+    margin-right: 1000px; */
+
+    /* width: 100%; */
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    /* text-align: left; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-top: 15px;
+    
+}
+.output-container h3 {
+    color: #d9534f;
+    font-size: 18px;
+}
+
+/* C# */
+.output {
+    margin-top: 20px;
+    padding: 10px;
+    background: #eee;
+    text-align: left;
+    color: #222;
+    font-family: monospace;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+.containers {
+    display: flex;
+    width: 100%;
+    /* height: 80vh; */
+    background: #e6e6e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.contents {
+    width: 70%;
+    padding: 20px;
+    text-align: justify;
+    height: 500px; /* Fix height to enable scrolling */
+    overflow-y: auto; /* Enable vertical scrollbar */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #2c3e50 #e6e6e6; /* Custom scrollbar color */
+    position: relative; /* Make sure position is set */
+}
+
+/* Custom Scrollbar for WebKit Browsers (Chrome, Safari) */
+.contents::-webkit-scrollbar {
+    width: 10px;
+}
+
+.contents::-webkit-scrollbar-thumb {
+    background: #2c3e50;
+    border-radius: 5px;
+}
+
+.contents::-webkit-scrollbar-track {
+    background: #e6e6e6;
+}
+
+/* Move scrollbar to the rightmost edge */
+.contents::-webkit-scrollbar {
+    position: absolute;
+    right: -10px; /* Push scrollbar further right */
+}
+
+.sidebars {
+    width: 20%;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.sidebars h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sidebars ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sidebars ul li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.3s;
+    font-size: 15px;
+}
+
+.sidebars ul li:hover {
+    background: #52aad3;
+}
+
+.sidebars {
+    width: 20%;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    height: 500px; /* Fix height to enable scrolling */
+    overflow-y: auto; /* Enable vertical scrollbar */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #ffffff #2c3e50; /* Customize scrollbar color */
+}
+
+/* Custom Scrollbar for WebKit Browsers (Chrome, Safari) */
+.sidebars::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebars::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.sidebars::-webkit-scrollbar-track {
+    background: #2c3e50;
+}
+
+.contents {
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+}
+
+/* Hide all lessons by default */
+.lessons {
+    display: none;
+}
+
+.lessons h3{
+    color: rgb(0, 21, 255);
+    
+}
+
+.lessons p{
+    font-family: 'Battambang', sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+/* Show active lesson */
+.lessons.active {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .containers {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sidebars {
+        width: 100%;
+        margin-right: 200px;
+    }
+
+    .sidebars ul li {
+        display: inline-block;
+        width: 50%;
+        margin: 5px;
+        margin-right: 200px;
+    }
+
+    .contents {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebars ul li {
+        width: 100%;
+        display: block;
+    }
+
+    .contents {
+        padding: 10px;
+    }
+}
+
+
+/* html table */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #e6efc2;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+pre{
+    border:  solid rgb(176, 176, 176);background-color: rgb(254, 254, 254);
+}
+

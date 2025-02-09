@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>កម្មវិធីរៀនសរសេរកូដ C++</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://webassembly.org/wasmcode.js"></script>
+</head>
+<body>
+    <h3 style="color: orange;">សរសេរកូដ C++</h3>
+    <div id="editor" style="height: 200px; width: 100%; border: 1px solid #ccc;"></div>
+    <button onclick="runCppCode()">បង្ហាញលទ្ធផល</button>
+    <h3>លទ្ធផល៖</h3>
+    <pre id="output"></pre>
+
+    <script>
+        let editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.session.setMode("ace/mode/c_cpp");
+
+        function runCppCode() {
+            let cppCode = editor.getValue();
+            document.getElementById("output").textContent = "Compiling...";
+            
+            fetch('https://api.jdoodle.com/v1/execute', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    script: cppCode,
+                    language: "cpp",
+                    versionIndex: "0",
+                    clientId: "your-client-id",
+                    clientSecret: "your-client-secret"
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("output").textContent = data.output || "កំហុស៖ " + data.error;
+            })
+            .catch(error => {
+                document.getElementById("output").textContent = "Error: " + error.message;
+            });
+        }
+    </script>
+</body>
+</html>

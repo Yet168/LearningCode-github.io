@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearningCode</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.rateyo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" />
+	<link rel="stylesheet" type="text/css" href="inner-page-style.css">
+    <link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Battambang&display=swap" />
+	<link rel="shorcut icon" type="x-icon" href="images/Logo/logo4.png" style="height: 100px;">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://webassembly.org/wasmcode.js"></script>
+	<style>
+        .wrapper {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .vertical-box {
+            background-color: #444;
+            padding: 10px;
+            border-radius: 5px;
+            color: yellow;
+            font-weight: bold;
+            text-align: center;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+        }
+        .containerse {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .arrow {
+            width: 2px;
+            height: 10px;
+            background-color: white;
+            margin: 5px 0;
+        }
+        .box {
+            background-color: #3498db;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+
+
+		/* Run coding c++ */
+
+		
+        body { font-family: Arial, sans-serif; }
+        #editor { height: 200px; width: 100%; border: 1px solid #ccc; }
+        button { margin-top: 10px; padding: 8px; background: orange; color: white; border: none; cursor: pointer; }
+        pre { background: #f4f4f4; padding: 10px; border: 1px solid #ccc; }
+    
+    </style>
+</head>
+<body>
+	<div id="page" class="site">
+			<header class="site-header">
+				<div class="main-header">
+					<div class="container">
+						<div class="logo-wrap" itemprop="logo">
+							<h2>សិក្សាគ្រឺះកូដនៅទីនេះ</h2>
+						</div>
+						<div class="nav-wrap">
+							<nav class="nav-desktop">
+								<ul class="menu-list">
+									<li><a href="/">ទំព័រដើម</a></li>
+									<li class="menu-parent">បណ្ដុំនៃមេរៀន
+										<ul class="sub-menu">
+											<li><a href="./course-listing.html">មេរៀនទាំងអស់</a></li>
+											<li><a href="./course-single.html">មេរៀនឥតគិតថ្លៃ</a></li>
+											<!-- <li class="menu-parent">Child
+												<ul class="sub-menu">
+													<li><a href="#">Grand-child</a></li>
+													<li><a href="#">Grand-child</a></li>
+												</ul>
+											</li> -->
+										</ul>
+									</li>
+									<!-- <li class="menu-parent">News
+										<ul class="sub-menu">
+											<li><a href="./events.html">Child</a></li>
+											<li><a href="./blog.html">Child</a></li>
+										</ul>
+									</li> -->
+									<!-- <li class="menu-parent">គម្រងរូបភាព
+										<ul class="sub-menu"> -->
+											<!-- <li><a href="#">Grand-child</a></li> -->
+											<!-- <li><a href="./gallery2.html">រូបភាព</a></li>
+										</ul> -->
+									</li>
+									<li><a href="./blog-edu-single.html">ព័ត៍មានទូទៅ</a></li>
+									<li><a href="./testimonials.html">ទំនាក់ទំនង</a></li>
+								</ul>
+							</nav>
+							<div id="bar">
+								<i class="fas fa-bars"></i>
+							</div>
+							<div id="close">
+								<i class="fas fa-times"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+	</div>
+
+    <div class="containers">
+        <!-- Sidebar -->
+        <div class="sidebars">
+            <h3>មេរៀនទី១៖ C++</h3>
+            <ul>
+				<li onclick="showLesson('lesson5')">សាកល្បងសរសេរកូដ</li>
+                <li onclick="showLesson('lesson1')">ការណែនាំអំពី C++</li>
+                <li onclick="showLesson('lesson2')">ការប្រើប្រាស់ Comment C++</li>
+                <li onclick="showLesson('lesson3')">ការប្រើប្រាស់ C++ variables</li>
+				<li onclick="showLesson('lesson4')">Constants</li>
+				<li onclick="showLesson('lesson6')">C++ User Input</li>
+				<li onclick="showLesson('lesson7')">C++ Data Types</li>
+				<li onclick="showLesson('lesson8')">C++ Type Conversion</li>
+				<li onclick="showLesson('lesson9')">C++ Operators</li>
+            </ul>
+        </div>
+
+        <!-- Content -->
+        <div class="contents">
+            <div id="lesson1" class="lessons">
+                <h3>១/ ការណែនាំអំពី C++</h3><br>
+                <p><b>C++</b> គឺជាភាសាកុំព្យូរទ័រដែលត្រូវបានបង្កើតឡើងដោយលោក <b>Bjame Stroustrup</b>។ ដំបូងឡើយភាសា C++ គេហៅថា <b>C with Classes</b> ប៉ុន្តែក្រោយមកទើបប្តូរមកជា <b>C++</b>។C++ បានចេញផ្សាយមុនដំបូងគេបង្អស់នៅឆ្នាំ ១៩៨៣។
+				</p><br><hr>
+				<h3>១.២/ Syntax នៃភាសា C++</h3>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">*/Statement/;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">.</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">.</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">.</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">.</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">.</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">*/Statement/;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+				<p>* #include &lt;iostream&gt;: គឺជា header file សម្រាប់ប្រើនៅក្នុងភាសា C++។<br>* using namespace std;: មានន័យថាយើងបានប្រើប្រាស់ namespace ដែលមានឈ្នោះថា std។<br>* Statement: គឺជាតំបន់សម្រាប់សរសេរ Statement ដែលយើងចង់សរសេរ។</p><br>
+				<p><b>សម្គាល់៖​</b> ដើម្បីធ្វើការ Output តម្លៃណាមួយ ឬទិន្នន័យណាមួយមកលើផ្ទាំង Console បានចំពោះភាសា C++ គឺយើងត្រូវប្រើ cout រួមជាមួយនឹងសញ្ញា <q><<</q>។</p><br>
+				<b>#ឧទាហរណ៍៖​</b>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "Hello World!";</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><p>Hello, World!</p></pre>
+				</div><br>
+				<p><b>សម្គាល់៖​</b> យើងអាចប្រើ cout ដើម្បីធ្វើការ Output នូវទិន្នន័យណាមួយដែលយើងចង់បានទៅតាមតម្រូវការរបស់យើង។ប៉ុន្តែយើងត្រូវចង់ចាំថារាល់ Statement នីមួយៗទាំងនោះគឺមិនត្រូវបាន<q>ចុះបន្ទាត់</q>ឡើយ។</p><br>
+				<b>#ឧទាហរណ៍៖​</b>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "Hello World!";</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "I am a student";</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><p>Hello, World!I am a student</p></pre>
+				</div>
+				<p>តាមឧទាហរណ៍ខាងលើយើងឃើញថា <b>statement ទាំងពីរ</b>នេះគឺមិនត្រូវបានចុះបន្ទាត់នោះទេ។ដូច្នេះដើម្បីចុះបន្ទាត់បាននោះគឺយើងអាចប្រើ <q>\n</q> ឬ <q>endl</q> ក៏បានដែរ។ បើទោះបីជាទាំងពីរនេះសុទ្ធតែអាចប្រើដើម្បី <b>ចុះបន្ទាត់ដូចគ្នាក៏ពិតមែន</b>ប៉ុន្តែចំពោះទីតាំងគឺមានភាពខុសគ្នាបន្តិច។ សូមមើលឧទាហរណ៍ខាងក្រោម៖</p><br>
+				<b>#ឧទាហរណ៍៖ ការចុះដើមបន្ទាត់ដោយប្រើ \n</b>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "Hello World! \n";</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "I am a student";</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><p>Hello, World!<br>I am a student</p></pre>
+				</div><br>
+				<b>#ឧទាហរណ៍៖ ការចុះដើមបន្ទាត់ដោយប្រើ endl</b>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "Hello World! << endl";</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "I am a student";</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><p>Hello, World!<br>I am a student</p></pre>
+				</div>
+				<br><hr>
+            </div>
+            <div id="lesson2" class="lessons">
+                <h3>២/ ការប្រើប្រាស់ Comment C++</h3><br>
+                <p><b>Comment៖</b>អាចត្រូវបានប្រើដើម្បីពន្យល់ឬកត់ត្រានៅត្រង់កន្លែងណាមួយដែល<b>Programmer</b>គិតថាសំខាន់។យើងអាច<b>Comment</b>ម្ដងតែមួយជួរ(<b>singled-line</b>) ក៏បានឬក៏<b>Comment</b>ជាលក្ខណះច្រើនជួរក៏បាន(<b>multi-line</b>)។</p><br><hr>
+				<h3>២.១/ ការប្រើប្រាស់ Single-line</h3><br>
+				<p><b>Single-line៖</b>ចាប់ផ្ដើមដោយសញ្ញា<b>forward-slashes(//)</b>។រាល់<b>Statement</b>ដែលប្រើសញ្ញា<q>//</q>នៅពីមុខគឺមិនត្រូវបានត្រួតពិនិត្យដោយ<b>Compiler</b>ឡើយ។</p><br>
+				<b>#ឧទាហរណ៍៖ ការប្រើប្រាស់ singled-line Comment</b>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "Hello World!";</span> <b style="color: green;">// This is a comment</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><p>Hello, World!</p></pre>
+				</div><br>
+				<h3>២.១/ ការប្រើប្រាស់ multi-line Comments</h3><br>
+				<p><b>Multi-line Comments៖</b>ចាប់ផ្ដើមដោយសញ្ញា<b>/*</b>។និងបញ្ចប់ដោយសញ្ញា<b>*/</b>ដែលប្រើសញ្ញា<q>//</q>។រាល់<b>StatementឬText</b>ដែលនៅចន្លោះសញ្ញាទាំងពីរនេះគឺមិនត្រូវបានដំណើរការឬក៏ត្រួតពិនិត្យដោយ<b>Compiler</b>ឡើយ។</p><br>
+				<b>#ឧទាហរណ៍៖ ការប្រើប្រាស់ Multi-line Comment</b>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color: green;">/* The code below will print the words Hello world! to the screen, and it is amazing */</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "Hello World!";</span> 
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><p>Hello, World!</p></pre>
+				</div>
+				<br><hr>
+            </div>
+            <div id="lesson3" class="lessons">
+                <h3>៣/ ការប្រើប្រាស់ C++ Variable</h3><br>
+                <p><b>Variable</b>ប្រៀបបានជារបស់ម៉្យាង(<b>ប្រអប់ឬcontainer</b>)ដែលយើងប្រើវាសម្រាប់ផ្ទុកទិន្នន័យផ្សេងៗ។ជាក់ស្ដែងនៅក្នុងC++មាន<b>Variable</b>ជាច្រើនប្រភេទដែលប្រភេទនីមួយៗត្រូវបានកំណត់ដោយ<b>DataType</b>។ដូច្នេះ<b>Variable</b>មួយត្រូវតែនៅអមដោយ<b>DataType</b>ណាមួយជានិច្ច។</p><br>
+				<b>#ឧទាហរណ៍៖</b> DataType មួយចំនួនដែលគេប្រើជាញឹកញាប់នៅក្នុងភាសា C++
+				<p><b style="color: red;">int</b> : អាចឲ <b>variable</b> ផ្ទុកនូវចំនួនគត់ (integer)។ Ex:-1, 2, -12, 100...<br><b style="color: red;">double</b> : អាចឲ​ <b>variable</b> ផ្ទុកនូវចំនួនទសភាគ (floating point number)។​ Ex: 1.2, 12.33, 11.00,...<br><b style="color: red;">int</b> : អាចឲ <b>variable</b> ផ្ទុកនូវចំនួនគត់ (integer)។ Ex:-1, 2, -12, 100...<br><b style="color: red;">char</b> : អាចឲ​ <b>variable</b> : ផ្ទុកនូវចំនួនតួអក្សរតែមួយតួរគត់ (single character)។ Ex:'a', 'A', 'B',...។ជាទូទៅតម្លៃរបស់វាត្រូវបានសរសេរដាក់នៅក្នុងសញ្ញា <b>Double quote</b>(<b>' '</b>)<br><b style="color: red;">string</b> : អាចឲ <b>variable</b> ផ្ទុកនូវពាក្យឬឃ្លាជាច្រើន។ Ex:"Hello World", "How are you?",...។​ តម្លៃរបស់វាត្រូវបានគេសរសេរដាក់នៅក្នុងសញ្ញា <b>Double quote</b>(<b>" "</b>)<br><b style="color: red;">bool</b> : អាចឲ <b>variable</b> ផ្ទុកនូវតម្លៃតែពីរគត់គឺ <b>ពិត</b>(True) ឬ<b>មិនពិត</b>(False)។ <br>
+				</p><br>
+				<br><hr>
+				<h3>៣.១/ ការប្រកាស (បង្កើត) Variable</h3><br>
+				<b>#Syntax:</b>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">DataType Variable_Name = value;</span><br>
+					</div>
+				</div><br>
+				<p><b>DataType</b> :int, char, double, string, bool,...<br><b>Variable_Name</b> :ជាឈ្មោះរបស់ variable។ Ex: myName,x,y,...<br><b>Value</b> :ជាតម្លៃដែលត្រូវបានកំណត់អាចជាលេខទសភាគ,តួរអក្សរ ឬចំនួនគត់ ឬផ្សេងៗទៀតទៅតាមប្រភេទទិន្នន័យ(DataType)<br><b>=</b> :ជា Assignment Operator ប្រើសម្រាប់ផ្ទេរតម្លៃរបស់​ value ទៅឲ variable ដែលនៅខាងស្ដាំសញ្ញារបស់វា។</p><br>
+				<b style="color: red;">#ឧទាហរណ៍៖</b> ចូរបង្កើត<b>Variable</b>មួយដែលមានឈ្មោះថា<b>myNum</b>និងមានប្រភេទទិន្នន័យ<b>int</b>រួចផ្ទេរតម្លៃ<b>15</b>ទៅអោយ<b>variable</b>មួយនេះរួចហើយធ្វើការ<b>Output</b>តម្លៃននោះចេញមកក្រៅវិញ។
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">int myNum = 15;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << myName;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+			<b>#ចម្លើយ៖​</b>
+			<div class="container">
+				<pre><p>15</p></pre>
+			</div><br>
+			<p><b>សម្គាល់៖​</b> ចូរចងចាំថាប្រសិនបើយើងកំណត់តម្លៃ(<b>Assign</b>) ថ្មីទៅអោយ varible ដែលមានផ្ទុកទិន្នន័យស្រាប់ហើយនោះ ទិន្នន័យចាស់នឹងត្រូវបានលុបចេញ(<b>Overwirte</b>)ពីលើទិន្នន័យចាស់។</p><br>
+			<b>#ឧទាហរណ៍៖</b>
+			<div class="container">
+				<div class="code-block">
+					<span class="code-tag">#include &lt;iostream&gt;</span><br>
+					<span class="code-tag">using namespace std;</span><br>
+					<span class="code-tag">int main(){</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">int myNum = 15;</span> <b style="color: green;">// Now myNum is 15</b><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">myNum = 10;</span> <b style="color: green;">// Now myNum is 10</b><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << myName;</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+					<span class="code-tag">}</span>
+				</div>
+			</div>
+			<b>#ចម្លើយ៖​</b>
+			<div class="container">
+				<pre><p>10</p></pre>
+			</div><br>
+			<p>តាមExampleនេះយើងបាន<b>Assign</b>តម្លៃអោយ<b>myNum</b>ចំនួនពីរលើក។ដូចនេះ<b>myNum</b>​វានឹងចាប់យកតម្លៃដែលត្រូវបាន<b>Assign</b>អោយវាចុងក្រោយគេបង្អស់។</p>
+            </div>
+			<div id="lesson4" class="lessons">
+                <h2>៤/ Constants</h2><br>
+                <p>ប្រសិនបើយើងមិនចង់អោយនរណាម្នាក់ឬក៏ខ្លួនយើងផ្ទាល់មិនអោយផ្លាស់ប្ដូរតម្លៃរបស់<b>variable</b>បានទេនោះយើងអាចប្រើ <b>keyword</b> ដែលមានឈ្មោះថា<b>const</b>។</p><br>
+				<b>#ឧទាហរណ៍៖</b>
+				<div class="container">
+					<pre><p>const int myNum = 15;</p> <b style="color: green;">//ការប្រកាសបែបនេះគឺតម្លៃរបស់myNum គឺមានតម្លៃ15ជានិច្ច</b><br><p>myNum = 10;</p> <b style="color: green;">//ប្រសិនបើយើងassignតម្លៃថ្មីអោយវាបែបនេះនោះនៅពេលcompileវានឹង Error</b></pre>
+				</div><br>
+				<b>សូមមើលកូដខាងក្រោមនៅពេល Compile</b>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">const int myNum = 15;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">myNum = 10;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << myName;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><p>In function 'int main()':<br>6.9: error: assignment of read-only variable 'myNum'</p></pre>
+				</div><br>
+				<b>#ឧទាហរណ៍៖</b> អំពីប្រភេទទិន្នន័យផ្សេងទៀត
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">int myNum = 5;</span> <b style="color: green;">// Integer (whole number without decimals)</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">double myFloatNum = 5.99;</span> <b style="color: green;">// FLoating point number (with decimals)</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">char myLetter = 'D';</span> <b style="color: green;">// Character</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">string myText = "Hello";</span> <b style="color: green;">// String (text)</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">bool myBoolean = true;</span> <b style="color: green;">// Boolean (true or false)</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div><br>
+				<b>#ឧទាហរណ៍៖</b> បន្ថែមអំពី Variable
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">int myAge = 35;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "I am" << myAge << " years old.";</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><p>I am 35 years old.</p></pre>
+				</div><div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">int x = 5;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">int y = 6;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">int sum = x + y;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << sum;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><p>11</p></pre>
+				</div>
+				<br>
+            </div>
+			<div id="lesson6" class="lessons">
+				<h3>៥/ C++ User Input</h3><br>
+				<p>&nbsp;&nbsp;&nbsp;យើងបានសិក្សារួចមកហើយអំពី keyword <b>cout</b> ដែលយើងប្រើវាសម្រាប់ធ្វើការ <b>Output</b>(print) តម្លៃណាមួយមកលើផ្ទាំង <b>Console</b>។ ឥឡូវយើងនឹងរៀនអំពី​ keyword មួយទៀតគឺ <b>cin</b> ដែលយើងប្រើវាក្នុងគោលបំណងដើម្បីអាចអោយយើងធ្វើការ <b>input</b>។<br>&nbsp;&nbsp;&nbsp;<b>cin</b>ត្រូវបានគេប្រើសម្រាប់អាន(<b>read</b>) ទិន្នន័យដែលត្រូវបានបញ្ចូលតាមរយះKeyboard ហើយKeyboardនេះត្រូវបានគេប្រើជាមួយនឹងសញ្ញា <b>Extraction Operator</b>(<b>>></b>)។</p><br>
+				<div style="border: 2px solid red;">
+					<p>&nbsp;&nbsp;នៅក្នុងឧទាហរណ៍ខាងក្រោមនេះយើងបានអោយUser បញ្ចូលតម្លៃជាចំនួនគត់, ហើយតម្លៃនោះនឹងត្រូវបានផ្ទុកនៅក្នុង variable មួយដែលមានឈ្មោះថា x។ បន្ទាប់មកទៀតយើងនឹង Output តម្លៃនោះចេញមកវិញ។</p><br>
+				</div><br>
+				<b>#លំនាំ៖</b>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">int x;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "Type a number: ";</span> <b style="color: green;">// Type a number and press enter</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cin >> x;</span> <b style="color: green;">// Get user input from the keyboard</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "Your number is: " << x;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><p>Type a number: |</p></pre>
+				</div><br>
+				<div style="border: 2px solid red;">
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ម៉្យាងវិញទៀតយើងក៏អាចបញ្ចូលទិន្នន័យចម្រុះនៅក្នុង cin តែមួយក៏បានដែរ។</p><br>
+				</div><br>
+				<b>#លំនាំ៖</b>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">char a;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">int num;</span><br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "Enter a character and an integer: ";</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cin >> a >> num;</span><br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "Character: " << a << endl;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "Number: " << endl;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><p>Enter a character and an integer: F<br>23<br>Character: F<br>Number: 23</p></pre>
+				</div>
+				<p><b>ចំណាំ៖</b> នៅត្រង់នេះយើងប្រើប្រាស់<b>cin</b> តែមួយប៉ុន្តែយើងអាចឲUserបញ្ចូលតម្លៃចំនួនពីរដង។</p><br>
+				<b>#ឧទាហរណ៍៖</b> ការបញ្ចូលតម្លៃទៅឲ Variable <b>x</b> និង <b>y</b>។ បន្ទាប់មកយើងនឹងបូកតម្លៃទាំងពីរនេះដោយលទ្ធផលត្រូវបានផ្ទុកនៅក្នុង Variable ដែលមានឈ្នោះថា <b>sum</b>។
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">int x, y;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">int sum;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "Type a number: ";</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cin >> x;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "Type another number: ";</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cin << y;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">sum = x + y;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "Sum is: " << sum;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+				<b>#លទ្ធផល៖​</b>
+				<div class="container">
+					<pre><p>Type a number: 2<br>Type another number: 3<br>Sum is: 5</p></pre>
+				</div>
+			</div>
+			<div id="lesson7" class="lessons">
+				<h3>៥/ C++ Data Types</h3><br>
+				<p>&nbsp;&nbsp;កាលពីមេរៀនមុន យើងបានសិក្សាក៏ដូចជាបានស្គាល់រួចមកហើយអំពី <b>Variable</b>, ដូច្នេះនៅមេរៀននេះយើងនឹងសិក្សាទៅលើ <b>Data Types</b>(<b>ប្រភេទទិន្នន័យ</b>)។</p><br>
+				<p>&nbsp;&nbsp;<b>តើ Data Types គេប្រើវាសម្រាប់ធ្វើអ្វី?</b></p>
+				<p>&nbsp;&nbsp;<b>Data Types</b> គឺត្រូវបានគេប្រើសម្រាប់ កំណត់ ប្រភេទទិន្នន័យទៅអោយVariable ថាតើvariable មួយនោះអាចផ្ទុកប្រភេទទិន្នន័យបានជាអ្វីខ្លះ?</p><br>
+				<b>#ឧទាហរណ៍៖</b><br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int age = 18;<br>
+				<div style="border: 2px solid rgb(0, 42, 255);">
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;តាមឧទាហរណ៍ខាងលើគឺ variable age ដែលប្រភេទរបស់វាត្រូវបានកំណត់ដោយdata type <b>int</b>។ដូច្នេះvariable age គឺរវាងផ្ទុកបានតែទិន្នន័យជា<b>ចំនួនគត់</b>តែប៉ុណ្ណោះ។</p><br>
+				</div><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float num = 12.32;<br>
+				<div style="border: 2px solid rgb(0, 42, 255);">
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;តាមឧទាហរណ៍ខាងលើគឺ variable num ដែលប្រភេទរបស់វាត្រូវបានកំណត់ដោយdata type <b>float</b>។ដូច្នេះvariable num គឺរវាងផ្ទុកបានតែទិន្នន័យជា<b>ចំនួនទសភាគ</b>តែប៉ុណ្ណោះ។</p><br>
+				</div><br>
+				<b>#Basic of Data Types</b><br>
+				<table>
+					<thead>
+						<tr>
+							<th style="text-align: center;">ប្រភេទទិន្នន័យ<br>Data Types</th>
+							<th style="text-align: center;">ទំហំ<br>Size</th>
+							<th style="text-align: center;">អត្តន័យ<br>Meaning</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>int</td>
+							<td>4 bytes</td>
+							<td>Integer: សំដៅលើ <b>ចំនួនគត់</b></td>
+						</tr>
+						<tr>
+							<td>float</td>
+							<td>4 bytes</td>
+							<td>Floating-point: សំដៅលើ <b>ចំនួនទសភាគ</b></td>
+						</tr>
+						<tr>
+							<td>Double</td>
+							<td>8 bytes</td>
+							<td>Double floatin-point: សំដៅលើ <b>ចំនួនទសភាគ</b>(តែអាចផ្ទុកតម្លៃបានច្រើន|ធំជាងfloat)</td>
+						</tr>
+						<tr>
+							<td>char</td>
+							<td>1 bytes</td>
+							<td>Character: សំដៅលើ <b>តួរអក្សតឬនិមិត្តសញ្ញា</b></td>
+						</tr>
+						<tr>
+							<td>bool</td>
+							<td>1 bytes</td>
+							<td>Boolean: សំដៅលើតម្លៃតែពីរគត់គឺអាច <b>true(1)</b> ឬុ<b>false(0)</b></td>
+						</tr>
+					</tbody>
+				</table>
+				<b>#ឧទាហរណ៍៖</b> ការ assign តម្លៃទៅអោយVariables និងការoutput តម្លៃទាំងនោះចេញមកវិញ៖
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag" style="color: green;">// Creating variables</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">int myNum = 5;</span><b style="color: green;">// Integer (whole number)</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">float myFloatNum = 5.99;</span><b style="color: green;">// Floating point number</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">double myDoubleNum = 9.98;</span><b style="color: green;">// Floating point number</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">char myLetter = 'D';</span><b style="color: green;">// Character</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">bool myBoolean = true;</span><b style="color: green;">// Boolean</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">string myString = "Hello";</span><b style="color: green;">// string </b><br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag" style="color: green;">// Print variable values</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "int: " << myNum << "\n";</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "float: " << myFloatNum << "\n";</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "double: " << myDoubleNum << "\n";</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "char: " << myLetter << "\n";</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "bool: " << myBoolean << "\n";</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "string: " << myString << "\n";</span><br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+				<b>#លទ្ធផល៖​</b>
+				<div class="container">
+					<pre><p>int: 5<br>float: 5.99<br>double: 9.98<br>char: D<br>bool: 1<br>string: Hello</p></pre>
+				</div><br>
+				<b>Float vs. Double</b>
+				<div style="border: 2px solid rgb(0, 42, 255);">
+					&nbsp;&nbsp;&nbsp;&nbsp;<b style="color: red;">float</b> និង <b style="color: red;">double</b> ទាំងពីរនេះសុទ្ធតែអាចផ្ទុកនូវចំនួនទសភាគបានដូចគ្នា ប៉ុន្តែចំពោះ៖<br><b style="color: red;">float:</b> អាចផ្ទុកចំនួនដែលស្ថិតនៅក្រោយក្បៀសបានតែ <b style="color: red;">6</b> ឬ <b style="color: red;">7 ខ្ទង់</b>ប៉ុណ្ណោះ<br><b style="color: red;">double:</b> អាចផ្ទុកចំនួនដែលស្ថិតនៅក្រោយក្បៀសបានរហូតដល់ទៅ <b style="color: red;">15</b> ខ្ទង់ ដូច្នេះការប្រើ Data type ប្រភេទ <b style="color: red;">double</b> គឺល្អជាង <b style="color: red;">float</b>។
+				</div><br>
+				<b>String</b>
+				<div style="border: 2px solid rgb(0, 42, 255);">
+					&nbsp;&nbsp;&nbsp;&nbsp;នៅក្នុងភាសា <b style="color: red;">C++</b> ដើម្បីផ្ទុកអក្សរច្រើនតួរឬពាក្យ គឺយើងមិនចាំបាច់ប្រើប្រាស់<b style="color: red;">char</b>ជា <b style="color: red;">Array</b>ដូចនៅក្នុងភាសា <b style="color: red;">C</b> នោះទេ។ យើងអាចប្រើ<b style="color: red;">string</b> ដើម្បីផ្ទុកអក្សរច្រើនតួរបានដោយប្រើជាមួយនឹងសញ្ញា<b style="color: red;">" "</b>។
+				</div><br>
+				<b>#ឧទាហរណ៍៖</b>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color: rgb(255, 0, 230);">string</b> name= <b style="color: rgb(255, 0, 0);">"</b><b style="color: yellow;">Kry Yet</b><b style="color: rgb(255, 0, 0);">"</b>;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color: rgb(255, 0, 230);">string</b> page= <b style="color: rgb(255, 0, 0);">"</b><b style="color: yellow;">YetCoding</b><b style="color: rgb(255, 0, 0);">"</b>;
+					</div>
+				</div>
+			</div>
+			<div id="lesson8" class="lessons">
+				<h3>៦/ C++ Type Conversion</h3><br>
+				<div style="border: 2px solid rgb(0, 42, 255);">
+					&nbsp;&nbsp;&nbsp;&nbsp;នៅក្នុងភាសា <b style="color: red;">C++</b> អាចអនុញ្ញាតអោយយើងធ្វើការបម្លែងទិន្នន័យ(convert data) ពីប្រភេទមួយទោជាទិន្នន័យថ្មីមួយទៀត។</b>។
+				</div><br>
+				<b>#ឧទាហរណ៍៖</b> Automatic Conversion ពី double ទៅ int
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">int num_int;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">double num_double = 9.99;</span><br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">// assigning a double value to an int variable</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">num_int = num_double;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "num_int = " << num_int << endl;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "num_double= " << num_double << endl;</span><br>>br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+				<b>#លទ្ធផល៖​</b>
+				<div class="container">
+					<pre><p>num_int = 9<br>number_double = 9.99<br><br>Press any key to continue...</p></pre>
+				</div><br>
+				<div style="border: 2px solid rgb(0, 42, 255);">
+					&nbsp;&nbsp;&nbsp;&nbsp;តាមឧទាហរណ៍ខាងលើ គេបានassignតម្លៃដែលជាប្រភេទ <b style="color: blue;">double</b> ទៅអោយvariable មួយទៀតដែលមានប្រភេទទិន្នន័យជា<b style="color: blue;">int</b>។ នៅត្រង់ <b style="color: rgb(72, 0, 255);">num_int = num_double</b> មានន័យថាតម្លៃរបស់<b style="color: blue;">double</b> ត្រូវបានបម្លែង(<b style="color: blue;">convert</b>)ទៅជាប្រភេទ<b style="color: blue;">int</b> ដោយស័្វយប្រវត្តិដោយ<b style="color: blue;">compiler</b>មុនពេលដែលវាផ្ទេរតម្លៃទៅអោយvariableមានប្រភេទទិន្នន័យជា<b style="color: blue;">int</b>។
+				</div><br>
+				<b style="color: darkmagenta;">Note:</b> ជាទូទៅប្រភេទទិន្នន័យ​ <b style="color: red;">int <i>មិនអាចប្រើសម្រាប់ចំពោះចំនួនទសភាគនោះទេ</i></b>គឺវាប្រើបានតែចំនួនគត់តែប៉ុណ្ណោះ។ ដូច្នេះចំនួនដែលស្ថិតនៅបន្ទាប់ពីសញ្ញាក្បៀស គឺមិនត្រូវបានបង្ហាញឡើយដូចនៅក្នុងឧទាហរណ៍ខាងលើ។<br><br>
+				<b>#ឧទាហរណ៍៖</b> Automatic Conversion ពី int ទៅ double
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">// assigning an in value to num_int</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">int num_int = 9;</span><br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">// declaring a double type variable</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">double num_double;</span><br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">// assigning int value to a double variable</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">num_double = num_int;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "num_int = " << num_int << endl;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "num_double= " << num_double << endl;</span><br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+				<b>#លទ្ធផល៖​</b>
+				<div class="container">
+					<pre><p>num_int = 9<br>number_double = 9<br><br>Press any key to continue...</p></pre>
+				</div><br>
+				<p>ការបាត់បង់ទិន្នន័យអំឡុងពេលបម្លែង<b style="color: darkred;">(Data Loss During Conversion)</b></p><br>
+				<div style="border: 2px solid rgb(0, 42, 255);">
+					&nbsp;&nbsp;&nbsp;&nbsp;តាមឧទាហរណ៍ទាំងពីរខាងលើ យើងឃើញថាការបម្លែង(convert) ពីប្រភេទទិន្នន័យតូចទៅប្រភេទទិន្នន័យមួយផ្សេងទៀតដែលមានទំហំធំជាង នោះមិនមានការបាត់បង់ទិន្នន័យឡើយផ្ទុយទៅវុញប្រសិនបើយើងបម្លែងពីប្រភេទទិន្នន័យធំទៅតូច នោះនឹងនាំអោយមានការបាត់បង់ទិន្នន័យ។
+				</div><br>
+				<div class="wrapper" style="justify-content: center;
+            		align-items: center;">
+					<div class="vertical-box">mConvert ការបំលែងទៅប្រភេទទិន្នន័យខ្ពស់</div>
+					<div class="containerse">
+						<div class="box">long double</div>
+						<div class="arrow"></div>
+						<div class="box">double</div>
+						<div class="arrow"></div>
+						<div class="box">float</div>
+						<div class="arrow"></div>
+						<div class="box">long</div>
+						<div class="arrow"></div>
+						<div class="box">int</div>
+						<div class="arrow"></div>
+						<div class="box">short</div>
+						<div class="arrow"></div>
+						<div class="box">char</div>
+					</div>
+					<div class="vertical-box">mConvert ការបំលែងទៅប្រភេទទិន្នន័យទាប</div>
+				</div>
+			</div>
+			<div id="lesson9" class="lessons">
+				<h3>៧/ C++ Operators</h3><br>
+				<div style="border: 2px solid rgb(0, 42, 255);">
+					&nbsp;&nbsp;&nbsp;&nbsp;នៅក្នុងមេរៀនយើងនឹងសិក្សាទៅលើ Operator នៅក្នុងភាសា C++ ដែលមានជាឧទាហរណ៍ជនួយដល់ការសិក្សាផងដែរ។
+				</div>
+				<div style="border: 2px solid rgb(0, 42, 255);margin-top: 10px;">
+					&nbsp;&nbsp;&nbsp;&nbsp;<b style="color: orange;">តើអ្វីទៅជាOperator</b><br><b style="color: orange;">Operator</b> គឺជានិម្មិតសញ្ញាដែលគេប្រើវាសម្រប់<b style="color: blue;">ការប្រតិបត្តិ</b>ទៅលើអថេរ(variable) ឬតម្លៃរបស់វា។
+				</div>
+				<div style="border: 2px solid rgb(0, 42, 255);margin-top: 10px;">
+					&nbsp;&nbsp;&nbsp;&nbsp;<b style="color: green;">តើOperator នៅក្នុងភាសា C++ មានអ្វីខ្លះ?</b><br>ប្រភេទ Operator ដែលយើងនិងសិក្សានៅក្នុងភាសាC++ មានដូចខាងក្រោម៖<br>.Arithmetic Operators<br>.Assignment Operator<br>.Comparison Operator<br>.Logical Operator
+				</div><br><br><hr>
+				<h3>៧.១/ Arithmetic Operator</h3><br>
+				<div style="border: 2px solid rgb(0, 42, 255);margin-bottom: 20px;">
+					&nbsp;&nbsp;&nbsp;&nbsp;Arithmetic <b style="color: orange;">Operators</b> ត្រូវបានគេប្រើសម្រាប់ការគណនាលេខនៅក្នុងគណិតវិទ្យា។
+				</div>
+				<table>
+					<thead>
+						<tr>
+							<th style="text-align: center;">សញ្ញា<br>(Operators)</th>
+							<th style="text-align: center;">អត្ថន័យនៃសញ្ញា<br>(Meaning of Operators)</th>
+							
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>+</td>
+							<td>បូក</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>ដក</td>
+						</tr>
+						<tr>
+							<td>*</td>
+							<td>គុណ</td>
+						</tr>
+						<tr>
+							<td>/</td>
+							<td>ចែក</td>
+						</tr>
+						<tr>
+							<td>%</td>
+							<td>ម៉ូឌុល</td>
+						</tr>
+					</tbody>
+				</table>
+				<p><b style="color: rgb(4, 192, 255);">%</b>: គឺជាសញ្ញាមួយដែលប្រើប្រាស់សម្រាប់<b>សម្គាល់</b>ដែលបានមកពីការចែកតម្លៃពីរ</p><br>
+				<b>#ឧទាហរណ៍៖</b> ការប្រើប្រភេទសញ្ញា Arithmetic Operators
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">#include &lt;iostream&gt;</span><br>
+						<span class="code-tag">using namespace std;</span><br>
+						<span class="code-tag">int main(){</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">int a, b;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">a = 7;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">b = 2;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">// ការបង្ហាញពីការគណនាប្រមាណវិធីបូក</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "a + b = " << (a + b) << endl;</span><br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">// ការបង្ហាញពីការគណនាប្រមាណវិធីដក</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "a - b = " << (a - b) << endl;</span><br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">// ការបង្ហាញពីការគណនាប្រមាណវិធីគុណ</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "a * b = " << (a * b) << endl;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">// ការបង្ហាញពីការគណនាប្រមាណវិធីចែក</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "a / b = " << (a / b) << endl;</span><br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">// ការបង្ហាញពីការគណនារកសំណល់ដែលបានមកពីការចែក a និង b</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">cout << "a % b = " << (a % b) << endl;</span><br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">return 0;</span><br>
+						<span class="code-tag">}</span>
+					</div>
+				</div>
+				<b>#លទ្ធផល៖​</b>
+				<div class="container">
+					<pre><p>a + b = 9<br>a - b = 5<br>a * b = 14<br>a / b = 3<br>a % b = 1<br><br>Press any key to continue...</p></pre>
+				</div><br><hr>
+				<h3>៧.១/ Increment and <b style="color: rgb(255, 0, 221);font-size: 20px;">Decrement Operators</b></h3><br>
+			</div>
+			<div id="lesson5" class="lessons">        
+    			<h3 style="color: orange;">សរសេរកូដ C++</h3>
+    <div id="editor"></div>
+    <button onclick="runCppCode()">បង្ហាញលទ្ធផល</button>
+    <h3>លទ្ធផល៖</h3>
+    <pre id="output"></pre>
+        	</div>
+    	</div>
+	</div>
+	<!-- Footer Start -->
+	<footer class="page-footer">
+		<div class="footer-first-section">
+			<div class="container">
+				<div class="box-wrap">
+					<header>
+						<h2>អំពី</h2>
+					</header>
+					<p>ប្រសិនជាបងមានចម្ងល់ដែលទាក់ទងជាមួយនឹងគេហទំព័រយើងខ្ញុំអាចទំនាក់ទំនងមកកាន់យើងខ្ញុំបានគ្រប់ពេលវេលា...</p>
+
+					<h4><a href="tel:+855 968675739"><i class="fas fa-phone"></i> +855 968675739</a></h4>
+					<h4><a href="mailto:yet@gmail.com"><i class="fas fa-envelope"></i> yet@gmail.com</a></h4>
+					<h4><i class="fas fa-map-marker-alt"></i>ចោមចៅ2, ពោធិ៍សែនជ័យ, ភ្នំពេញ</h4>
+				</div>
+
+				<div class="box-wrap">
+					<header>
+						<h2>តំណភ្ជាប់</h2>
+					</header>
+					<ul>
+						<li><a href="/">ទំព័រដើម</a></li>
+						<li><a href="/course-listing.html">មេរៀន</a></li>
+						<li><a href="#">Courses</a></li>
+						<li><a href="/blog-edu-single.html">ព័ត៍មានទូទៅ</a></li>
+						<li><a href="/testimonials.html">ទំនាក់ទំនង</a></li>
+					</ul>
+				</div>
+
+				<div class="box-wrap">
+					<header>
+						<h2>មូលដ្ធានគ្រឹះ</h2>
+					</header>
+					<div class="recent-course-wrap">
+						<img src="images/Footer/footer5.png" alt="Ui/Ux Designing">
+						<a href=""><div class="course-name">
+							<h3>ពង្រឹងនូវគ្រឹះកូដយ៉ាងច្បាស់លាស់</h3>
+							<p><span>$50</span> ឥតគិតថ្លៃ</p>
+						</div></a>
+					</div>
+					<div class="recent-course-wrap">
+						<img src="images/Footer/footer3.png" alt="Ui/Ux Designing">
+						<a href=""><div class="course-name">
+							<h3>បណ្ដុំទៅដោយមេរៀនដ៏ពេញនិយម</h3>
+							<p><span>$50</span>ឥតគិតថ្លៃ</p>
+						</div></a>
+					</div>
+				</div>
+
+				<div class="box-wrap">
+					<header>
+						<h2>ទំនាក់ទំនង</h2>
+					</header>
+					<section class="quick-contact">
+						<input type="email" name="email" placeholder="Your Email*">
+						<textarea placeholder="Type your message*"></textarea>
+						<button>send message</button>
+					</section>
+				</div>
+
+			</div>
+		</div>
+		<!-- End of box-Wrap -->
+		<div class="footer-second-section">
+			<div class="container">
+				<hr class="footer-line">
+				<ul class="social-list">
+					<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href=""><i class="fab fa-twitter"></i></a></li>
+					<li><a href=""><i class="fab fa-skype"></i></a></li>
+					<li><a href=""><i class="fab fa-youtube"></i></a></li>
+					<li><a href=""><i class="fab fa-instagram"></i></a></li>
+				</ul>
+				<hr class="footer-line">
+			</div>
+		</div>
+		<!-- <div class="footer-last-section">
+			<div class="container">
+				<p>Copyright 2018 &copy; educationpro.com <span> | </span> Theme designed and developed by <a href="https://labtheme.com">Lab Theme</a></p>
+			</div>
+		</div> -->
+	</footer>
+</div>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="js/jquery.rateyo.js"></script>
+	<script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+    <script src="js/javaScript1.js"></script>
+	<script src="js/javaScript2.js"></script>
+	<script src="js/javaScript3.js"></script>
+	<script>
+        let editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.session.setMode("ace/mode/c_cpp");
+        editor.setValue(`#include <iostream>\nusing namespace std;\nint main() {\n    cout << "Hello, C++ World!";\n    return 0;\n}`);
+
+        function runCppCode() {
+            let cppCode = editor.getValue();
+            document.getElementById("output").textContent = "Compiling...";
+
+            fetch("http://localhost:3000/run", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ code: cppCode })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("output").textContent = data.output || "កំហុស៖ " + data.error;
+            })
+            .catch(error => {
+                document.getElementById("output").textContent = "Error: " + error.message;
+            });
+        }
+    </script>
+
+</body>
+</html>

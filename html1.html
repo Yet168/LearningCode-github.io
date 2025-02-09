@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearningCode</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.rateyo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" />
+	<link rel="stylesheet" type="text/css" href="inner-page-style.css">
+    <link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Battambang&display=swap" />
+	<link rel="shorcut icon" type="x-icon" href="images/Logo/logo4.png" style="height: 100px;">
+</head>
+<body>
+	<div id="page" class="site">
+			<header class="site-header">
+				<div class="main-header">
+					<div class="container">
+						<div class="logo-wrap" itemprop="logo">
+							<h3>សិក្សាគ្រឺះកូដនៅទីនេះ</h3>
+						</div>
+						<div class="nav-wrap">
+							<nav class="nav-desktop">
+								<ul class="menu-list">
+									<li><a href="/">ទំព័រដើម</a></li>
+									<li class="menu-parent">បណ្ដុំនៃមេរៀន
+										<ul class="sub-menu">
+											<li><a href="./course-listing.html">មេរៀនទាំងអស់</a></li>
+											<li><a href="./course-single.html">មេរៀនឥតគិតថ្លៃ</a></li>
+											<!-- <li class="menu-parent">Child
+												<ul class="sub-menu">
+													<li><a href="#">Grand-child</a></li>
+													<li><a href="#">Grand-child</a></li>
+												</ul>
+											</li> -->
+										</ul>
+									</li>
+									<!-- <li class="menu-parent">News
+										<ul class="sub-menu">
+											<li><a href="./events.html">Child</a></li>
+											<li><a href="./blog.html">Child</a></li>
+										</ul>
+									</li> -->
+									<!-- <li class="menu-parent">គម្រងរូបភាព
+										<ul class="sub-menu"> -->
+											<!-- <li><a href="#">Grand-child</a></li> -->
+											<!-- <li><a href="./gallery2.html">រូបភាព</a></li>
+										</ul> -->
+									</li>
+									<li><a href="./blog-edu-single.html">ព័ត៍មានទូទៅ</a></li>
+									<li><a href="./testimonials.html">ទំនាក់ទំនង</a></li>
+								</ul>
+							</nav>
+							<div id="bar">
+								<i class="fas fa-bars"></i>
+							</div>
+							<div id="close">
+								<i class="fas fa-times"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+	</div>
+
+    <div class="containers">
+        <!-- Sidebar -->
+        <div class="sidebars">
+            <h3>មេរៀនទី១៖ HTML</h3>
+            <ul>
+				<li onclick="showLesson('lesson5')">សាកល្បងសរសេរកូដ</li>
+                <li onclick="showLesson('lesson1')">តើ HTML គឺជាអ្វី?</li>
+                <li onclick="showLesson('lesson2')">HTML Tags</li>
+                <li onclick="showLesson('lesson3')">HTML Page Structure</li>
+				<li onclick="showLesson('lesson4')">ការប្រើប្រាស់ Link</li>
+            </ul>
+        </div>
+
+        <!-- Content -->
+        <div class="contents">
+            <div id="lesson1" class="lessons">
+                <h3>១/ តើ HTML គឺជាអ្វី?</h3><br>
+                <p><b>HTML</b> គឺជាភាសាសម្រាប់បង្កើតគេហទំព័រ(Website)។HTML មកពីពាក្យ <b>Hyper Text Markup Language</b>វាមិនមែនជាភាសា Programming Language ទេ តែវាជាភាសា Markup Language។ Markup Language គឺជាសំនំុនៃ Markup Tages ហើយដែល HTML ប្រើប្រាស់ markup tags ដើម្បីកសាងគេហទំព័រ ហើយធ្វើការបង្ហាញដោយ Web Browser។ Web page កើតឡើងដោយទំនាក់ទំនងជាច្រើន Link ទៅវិញទៅមកសម្រាប់បង្ហាញ Contents។ HTML ជាភាសាមួយដែលងាយស្រួលក្នុងការសិស្សប្រើប្រាស់។
+				
+				</p><br><hr>
+				<h3>១.១/ គ្រោងឆ្អឹងរបស់ HTML</h3><br>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">&lt;!DOCTYPE html&gt;</span><br>
+						<span class="code-tag">&lt;html&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><span class="code-text">Hello World</span><span class="code-tag">&lt;/title&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h1&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h1&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/body&gt;</span><br>
+						<span class="code-tag">&lt;/html&gt;</span>
+					</div>
+				</div><br><hr>
+				<p><b><span class="code-tag">&lt;html&gt;</span></b>៖ គឺជា Tage ដំបូងដែលយើងប្រើប្រាស់នៅក្នុង HTML Document។គ្រប់ HTML Document ត្រូវបានចាប់ផ្ដើមដោយ <span class="code-tag">&lt;html&gt;</span> និងបញ្ចប់ដោយ <span class="code-tag">&lt;/html&gt;</span></p>
+				<p><b><span class="code-tag">&lt;head&gt;</span> section</b>៖ គឺជាកន្លែងសម្រាប់ផ្ទុកចំណងជើងនៃ Page និងបង្កើតទំនាក់ទំនងរវាង <q>HTML Document</q> និង <q>File</q> ដូចជា <q>Script</q> និង <q>Css</q>។វាត្រូវបានចាប់ផ្ដើមដោយ <span class="code-tag">&lt;head&gt;</span> និងបញ្ចប់ដោយ <span class="code-tag">&lt;/head&gt;</span></p>
+				<p><b><span class="code-tag">&lt;body&gt;</span> section</b>៖ គឺជាផ្នែកមួយនៃ <q>HTML Document</q> សម្រាប់ផ្ទុកនូវ៖<br>
+					-អត្តបទ(Text)<br>
+					-Link<br>
+					-រូបភាព<br>
+					-វីឌីអូ<br>
+					-ចម្រៀងជាដើម...។
+				</p><br><hr>
+            </div>
+            <div id="lesson2" class="lessons">
+                <h3>២/ HTML Tags <br><br>
+                <p>HTML Tag ឬHTML Markup គឺជាកម្រងពាក្យ<q>(Keywords)</q> ដែលប្រើរុំព័ទ្ធដោយ Single brackets <q><</q> និង <q>></q>។
+					<b>#ឧទាហរណ៍៖​</b> &lt;html&gt;,&lt;head&gt;,&lt;body&gt;...<br><br>
+					<b>បញ្ជាក់៖ </b>Tage មានពីរប្រភេទគឺ៖<br>
+					<b>-Empty tag:</b> គឺមានតែមួយ tag ចាប់ផ្ដើមពំុមាន tag បញ្ចប់នោះទេ។<br>
+					<b>#ឧទាហរណ៍៖​</b> &lt;br/&gt;, &lt;hr/&gt;, &lt;img/&gt;...<br>
+					<b>-Containers tag:</b> គឺជា tag ពេញលេញដែលមាន tag ចាប់ផ្ដើម និងបញ្ចប់។<br>
+					<b>#ឧទាហរណ៍៖​</b><br> .&lt;p&gt;: គឺជាtag ចាប់ផ្ដើម <br> .&lt;/p&gt;: គឺជាtag បញ្ចប់<br><br>
+					<b>សម្គាល់៖​ </b>HTML tags មិនប្រកាន់តួអក្សរនោះទេ​​ &lt;p&gt; មានន័យថា​ &lt;p&gt;។Websites ភាគច្រើនគឺប្រើប្រាស់ HTML tags អក្សរធំ។យើងគួរតែប្រើប្រាស់អក្សរតូចវិញព្រោះថា៖​ World Wide Web Consortium (W3C) បានផ្ដល់អនុសាស្រ្តអោយប្រើតួអក្សរក្នុង HTML4 ហើយក៏ទាមទារអោយប្រើប្រាស់អក្សរតួរក្នុង XHTML។
+				</p><br><hr>
+				<h3>២.២/ លក្ខណះរបស់ tag (Attribute)</h3><br>
+				<p><b>Attribute៖</b> គឺវាស្ថិតតែនៅក្នុង Empty ឬBeginning tag(Start tag) តែប៉ុណ្ណោះ។គ្រប់ប្រភេទរបស់ <q>tag</q> សុទ្ធតែមានលក្ខណះ (attribute) ដើម្បីធ្វើការកែគំរូទ្រង់ទ្រាយតាមតម្រូវការដែលគេចង់បាន។<br>
+					<div class="container">
+						<div class="code-block">
+							<center><p>&lt;tag syntax: name= "value"&gt;...............................................................................................&lt;/tag&gt;</p></center>
+						</div>
+					</div>
+					<b>#ឧទាហរណ៍៖​</b> &lt;a href="http://www.coding.com"/&gt; CODING Website &lt;/a&gt;<br><br>
+					<b>សម្គាល់៖​ </b>ការប្រើប្រាស់អក្សរតូចសម្រាប់ Attributes<br>
+					-Attribute </b>គឺជានិច្ចកាលមកព្រមគ្នារវាង name និង Value <br>
+					-Attribute names and attribute values are មិនប្រកាន់តួអក្សរ However, the World Wide Web Consortium (W3C) បានផ្ដលអនុសាសន៍អោយប្រើប្រាស់អក្សរតូចសម្រាប់ Attributes និង attribute value ក្នុង HTML4។<br>
+					-Attribute Values ស្ថិតក្នុង​ Quote។
+				</p><br><hr>
+				<h3>២.៣/ Element Content </h3><br>
+				<p><b>Element Content </b>ចាំបាច់ត្រូវតែមាន start tag និង​ ending tag។ជាក់ស្ដែងព័ត៍មាននៅចន្លោះ tag ទាំងពីរយើងហៅថា​ <q>Element Content</q>។</p><br>
+				<b>#ឧទាហរណ៍៖​</b><br>
+				<div class="container">
+					<div class="code-block">
+						&lt;b&gt; This is text Bold &lt;/b&gt;
+					</div>
+				</div><br><hr>
+				<h3>២.៤/ ការចាប់ផ្ដើមសរសេរកូដ HTML</h3><br>
+                <p>ភាសា​ HTML គេសរសេរនៅក្នុង Text Editor ដូចជា Notepad, Wordpad, ConTEXT ....។Text Editor ដែលគេចូលចិត្តប្រើ និងមានភាពងាយស្រូលគឺ <q>Notepad</q>។យើងក៏អាចកសាងគេហទំព័រតាម Web Editor ដែលមានភាពងាយស្រូលព្រោះវាមាន Tool ស្រាប់ៗដោយមិនចាំបាច់ចងចាំកូដនោះទេ Web Editor មានដូចជា៖ Microsoft Frontpage, Macromedia Dreamweaver and Visual Studio....។</p>
+            </div>
+            <div id="lesson3" class="lessons">
+                <h3>៣/ HTML Page Structure</h3><br>
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">&lt;!DOCTYPE html&gt;</span><br>
+						<span class="code-tag">&lt;html&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><span class="code-text">Hello World</span><span class="code-tag">&lt;/title&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h2&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h2&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;p&gt;</span><span class="code-text">Rean Nv Nis Mk!!</span><span class="code-tag">&lt;/p&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/body&gt;</span><br>
+						<span class="code-tag">&lt;/html&gt;</span>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<pre><h2>Hello, World!</h2><br><p>Rean Nv Nis Mk!!</p></pre>
+				</div>
+				. ការប្រកាស​ &lt;!DOCTYPE html&gt; មិនមែនជា HTML Tag ទេ។ វាប្រាប់ទៅ Web browser ពី Version នៃ HTML <br> . អក្សរនៅចន្លោះ &lt;head&gt; នឹង &lt;/head&gt; ផ្ដល់ព័ត៍មានអំពី document <br> . អក្សរនៅចន្លោះ &lt;title&gt; នឹង &lt;/title&gt; ផ្ដល់ចំណងជើងសម្រាប់ document <br> . អក្សរនៅចន្លោះ &lt;body&gt; នឹង &lt;/body&gt; ពណ៍នាអំពី Page Content <br><br>
+				<p><b>សម្គាល់៖​ </b>Browsers automatically add some empty space (a margin) before and after each heading.</p>
+				<br><hr>
+				<h3>១.២/ ការប្រើប្រាស់ Paragraph</h3><br>
+				<p>ជាធម្មតានៅក្នុងអត្ថបទជាភាសាអង់គ្លេសគេចែកចេញជា Paragraph ដែលមានន័យជាភាសាខ្មែរថា <q>កថាខ័ណ្ឌ</q> ចំណែកឯនៅក្នុងភាសា HTML វិញក៏អនុញ្ញាតអោយយើងបែងចែកអត្ថបទនៅលើ​ Website ជា Paragraph បានផងដែរដោយប្រើប្រាស់ Tag &lt;p&gt;។</p>
+				<div class="container">
+					<div class="code-block">
+						<p><b><u>Syntax:</u></b></p>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p align="left | right | center | justify"&gt; ....................................................................................... &lt;/p&gt;
+					</div>
+				</div><br>
+				<b>#ឧទាហរណ៍៖​</b>
+				<div class="container">
+					<div class="code-block">
+						&lt;html&gt;<br>&lt;head&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My Website&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;&nbsp;&lt;h1&gt;C# Coding Standards and Nest Programming Practices&lt;/h1&gt;<br>&nbsp;&nbsp;&lt;p&gt;ដើម្បីចែករំលែកនូវចំណេះដឹងទៅកាន់និស្សិតដែលកំពុងសិក្សាលើជំនាញអាយធីអោយបានទូលំទូលាយជាងមុន។&lt;/p&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<p><b><pre>C# Coding Standards and Nest Programming Practices<br><b>ដើម្បីចែករំលែកនូវចំណេះដឹងទៅកាន់និស្សិតដែលកំពុងសិក្សាលើជំនាញអាយធីអោយបានទូលំទូលាយជាងមុន។</b></pre></b>
+				</div><br><hr>
+				<h3>១.៣/ ការចុះដើមបន្ទាត់</h3><br>
+				<p><b>&lt;br/&gt;</b>យើងប្រើសម្រាប់ចុះបន្ទាត់នៅក្នុងអត្ថបទ។ពេលសរសេរអត្ថបទនៅកន្លែង HTML Code រួចចុះបន្ទាត់តែម្ដងនោះពុំមានឥទ្ធិពលនៅពេលបង្ហាញនោះទេព្រោះ Web Browser ធ្វើការបកប្រែអត្ថបទដោយមិនគិតការចុះបន្ទាត់ទេវានឹងបង្ហាញអត្ថបទបន្តបន្ទាប់។</p>
+				<b>#ឧទាហរណ៍៖​</b>
+				<div class="container">
+					<div class="code-block">
+						&lt;html&gt;<br>&lt;head&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Test Website&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;&nbsp;Welcome to Study HTML&lt;br/&gt;<br>&nbsp;&nbsp;Welcome to Study HTML<br>&lt;/body&gt;<br>&lt;/html&gt;
+					</div>
+				</div></p>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<p><b><pre>&nbsp;&nbsp;Welcome to Study HTML<br><b>&nbsp;&nbsp;Welcome to Study HTML</b></pre></b>
+				</div><br><hr>
+				<h3>១.៤/ ការគូសបន្ទាត់</h3><br>
+				<p>ដើម្បីគូសបន្ទាត់ដេកយើងត្រូវប្រើប្រាស់ Tag &lt;hr/&gt;។</p>
+				<p><b>Attributes </b>របស់&lt;hr/&gt; tag<br>
+					-align ="left | right | center"<br>
+					-size ="x" ដែល <q>x</q> គឺជាកម្រាស់បន្ទាត់គិតជា pixel<br>
+					-width ="y" ដែល <q>y</q> គឺជាប្រវែងបន្ទាត់គិតជា pixel ឬភាគរយ (%)<br>
+					-color ="color_name" | "color_code" ប្រើសម្រាប់ដាក់ព៍អោយបន្ទាត់។<br>
+				</p><br>
+				<b>សម្គាល់៖​ </b>ប្រវែងបន្ទាត់ Default របស់វាស្មើនឹងប្រវែង Paragraph (គិតជា Pixel ឬ% ដោយប្រៀបធៀបជាមួយប្រវែង Window)<br><br><hr>
+				<h3>១.៥/ ការប្រើប្រាស់ Freformatted Text (PRE)</h3><br>
+                <p><b>&lt;pre&gt;..............&lt;/pre&gt;</b> ប្រើប្រាស់សម្រាប់រៀបចំទំព័រនៃអត្ថបទ HTML File។នៅពេលដែល Browser ជួបប្រទះ tag នេះវាបកប្រែអត្ថបទដោយរក្សានូវភាពដើមដដែល។<br><br>
+					<b>#ឧទាហរណ៍៖​</b>
+					<div class="container">
+						<div class="code-block">
+							&lt;html&gt;<br>&lt;head&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Using PRE Tag&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;&nbsp;&lt;h1&gt;Using PRE Tag&lt;/h1&gt;<br>&nbsp;&nbsp;&lt;pre&gt;<br>&nbsp;&nbsp;===========================<br>&nbsp;&nbsp;===========================<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;============<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;============<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;============<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;============<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;============<br>&nbsp;&nbsp;===========================<br>&nbsp;&nbsp;===========================<br>&nbsp;&nbsp;&lt;/pre&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;
+						</div>
+					</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<p><b><pre>Using PRE Tag<br><b>&nbsp;&nbsp;===========================<br>&nbsp;&nbsp;===========================<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;============<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;============<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;============<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;============<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;============<br>&nbsp;&nbsp;===========================<br>&nbsp;&nbsp;===========================<br></b></pre></b>
+				</div>
+				</p><br><hr>
+				<h3>១.៦/ ការប្រើប្រាស់​ Center</h3><br>
+				<p><b>Center:</b> គឺជា​ Tag សម្រាប់កំណត់ Element Content របស់វាអោយនៅចំកណ្ដាលទំព័រ។<br>
+				   <b>#ឧទាហរណ៍៖​</b> &lt;center&gt; This paragraph is center on web page &lt;/center&gt;
+				</p>
+				<br><hr>
+				<h3>១.៧/ ការប្រើប្រាស់​ដកឃ្លា Space</h3><br>
+				<p><b>Space:</b> គឺប្រើប្រាស់ជាមួយភាសា HTML យើងមិនផ្លាស់ប្ដូរការបង្ហាញនៅលើ Browser ដោយបន្ថែមដកឃ្លា (Space) អោយច្រើនបានឡើយ។​ Browser និងលុប Space ជាច្រើនដោយទុកតែ ១Space នៅពេលបង្ហាញ។ដើម្បីអោយ browser ស្គាល់ការដកឃ្លា (space) ច្រើនយើងត្រូវប្រើ HTML Entity: <q>&nbs</q>។<br>
+				   <b>#ឧទាហរណ៍៖​</b> 
+				   <div class="container">
+					<div class="code-block">
+						&lt;html&gt;<br>&lt;head&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Using Space Tag&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;&nbsp;&lt;h1&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 &nbs;&nbs;&nbs;&nbs;&nbs;&nbs;&nbs;&nbs;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs;&nbs;&nbs;&nbs;&nbsp;am<br>&nbsp;&nbsp;&lt;/h1&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;
+					</div>
+					</div>
+					<b>#ចម្លើយ៖​</b>
+					<div class="container">
+						<p><b><pre>I &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; am<br></pre></b>
+					</div>
+				</p><br><hr>
+				<h3>១.៨/ HTML Comments</h3><br>
+				<p><b>Comment </b>ត្រូវបានបញ្ចូលក្នុង HTML Code ដើម្បីថាយស្រួលអាន​ នឹងយល់ Comment មិនត្រូវបាន Web Browser ធ្វើការបកប្រែនិងបង្ហាញលើ browser ទេ។<br>
+					<b>#ឧទាហរណ៍៖​</b> &lt;!-- This is a comment --&gt;
+				</p><br><hr>
+				<h3>១.៩/ ការប្រើប្រាស់ HTML Text Formatting</h3><br>
+				<p><b>HTML Text Formatting</b></p>
+				<table>
+					<thead>
+						<tr>
+							<th>Tag</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>&lt;b&gt;</td>
+							<td>Defines bold text</td>
+						</tr>
+						<tr>
+							<td>&lt;big&gt;</td>
+							<td>Defines big text</td>
+						</tr>
+						<tr>
+							<td>&lt;em&gt;</td>
+							<td>Defines emphasized text</td>
+						</tr>
+						<tr>
+							<td>&lt;i&gt;</td>
+							<td>Defines italic text</td>
+						</tr>
+						<tr>
+							<td>&lt;small&gt;</td>
+							<td>Defines small text</td>
+						</tr>
+						<tr>
+							<td>&lt;strong&gt;</td>
+							<td>Defines strong text</td>
+						</tr>
+						<tr>
+							<td>&lt;sub&gt;</td>
+							<td>Defines subscripted text</td>
+						</tr>
+						<tr>
+							<td>&lt;sup&gt;</td>
+							<td>Defines superscripted text</td>
+						</tr>
+						<tr>
+							<td>&lt;ins&gt;</td>
+							<td>Defines inserted text</td>
+						</tr>
+						<tr>
+							<td>&lt;del&gt;</td>
+							<td>Defines deleted text</td>
+						</tr>
+					</tbody>
+				</table>
+				<p><b>HTML "Computer Output" Tags</b></p>
+				<table>
+					<thead>
+						<tr>
+							<th>Tag</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>&lt;code&gt;</td>
+							<td>Defines computer code text</td>
+						</tr>
+						<tr>
+							<td>&lt;kbd&gt;</td>
+							<td>Defines keyoard text</td>
+						</tr>
+						<tr>
+							<td>&lt;samp&gt;</td>
+							<td>Defines sample computer code</td>
+						</tr>
+						<tr>
+							<td>&lt;tt&gt;</td>
+							<td>Defines teletype text</td>
+						</tr>
+						<tr>
+							<td>&lt;var&gt;</td>
+							<td>Defines a variable</td>
+						</tr>
+						<tr>
+							<td>&lt;pre&gt;</td>
+							<td>Defines preformatted text</td>
+						</tr>
+					</tbody>
+				</table>
+				<p><b>HTML Citations, Quotations, and Definition Tags</b></p>
+				<table>
+					<thead>
+						<tr>
+							<th>abbr</th>
+							<th>Description abbreviation</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>&lt;acronym&gt;</td>
+							<td>Defines an acronym</td>
+						</tr>
+						<tr>
+							<td>&lt;address&gt;</td>
+							<td>Defines contact information for the author/owner of a docutment</td>
+						</tr>
+						<tr>
+							<td>&lt;bdo&gt;</td>
+							<td>Defines the text direction</td>
+						</tr>
+						<tr>
+							<td>&lt;blockquote&gt;</td>
+							<td>Defines a long quotation</td>
+						</tr>
+						<tr>
+							<td>&lt;q&gt;</td>
+							<td>Defines a short quotation</td>
+						</tr>
+						<tr>
+							<td>&lt;cite&gt;</td>
+							<td>Defines a citation</td>
+						</tr>
+						<tr>
+							<td>&lt;dfn&gt;</td>
+							<td>Defines a definition term</td>
+						</tr>
+					</tbody>
+				</table>
+				<br><hr>
+            </div>
+			<div id="lesson4" class="lessons">
+				<h3>៥/ HTML Element</h3><br>
+                <table>
+					<thead>
+						<tr>
+							<th>Start tag</th>
+							<th>Element Content</th>
+							<th>End tag</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>&lt;p&gt;</td>
+							<td>Hello Crush</td>
+							<td>&lt;/p&gt;</td>
+						</tr>
+						<tr>
+							<td>&lt;a href="default.html"&gt;</td>
+							<td>Register</td>
+							<td>&lt;/a&gt;</td>
+						</tr>
+					</tbody>
+				</table><br><hr>	
+				<h3>៥/ HTML Head</h3><br>
+				. &lt;head&gt; ជា container សម្រាប់ផ្ទុកគ្រប់ធាតុរបស់ head ដែលអាចមានដូចជា script, ប្រាប់ទៅ browser ពីកន្លែងទីតាំង stylesheet, ផ្ដល់នូវ meta information...<br> . Tag ដែលអាច add ចូល head section មានដូចជា៖ &lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt; <br> . The HTML &lt;title&gt;
+				- &lt;title&gt; tag កំណត់ title អោយ document<br> - ចាំបាច់ត្រូវតែដាក់នៅគ្រប់ HTML document<br> - វាបង្ហាញនៅលើ browser toolbar<br><br>
+				<b>#ឧទាហរណ៍៖​</b>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><span class="code-text">Hello World</span><span class="code-tag">&lt;/title&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+					</div>
+				</div><br>
+				. The HTML &lt;style&gt; tag<br>.កំណត់ style សម្រាប់ single HTML page<br>.អ្នកអាចសរសេរ Css style នៅក្នុងនោះ<br><br>
+				<b>#ឧទាហរណ៍៖​</b>	
+				<div class="container">
+					<div class="code-block">
+						<span class="code-tag">&lt;!DOCTYPE html&gt;</span><br>
+						<span class="code-tag">&lt;html&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><span class="code-text">Hello World</span><span class="code-tag">&lt;/title&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;style&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">body {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: powderblue;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1 {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;/style&gt;<br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;h1&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h1&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;p&gt;</span><span class="code-text">Rean Nv Nis Mk!!</span><span class="code-tag">&lt;/p&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/body&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;title&gt;</span><br>
+						<span class="code-tag">&lt;/html&gt;</span>
+					</div>
+				</div>
+				<b>The HTML &lt;base&gt;</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>សម្រាប់បញ្ជាក់ពី base URL/taret សម្រាប់គ្រប់ relative URL ទាំងអស់នៅក្នុង page មួយ</i><br><br>
+				<b>#ឧទាហរណ៍៖​</b>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;<span class="code-tag">&lt;head&gt;</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-tag">&lt;base </span><span class="code-text">href="https://news.sabay.com.kh/" target="_blak"</span><span class="code-tag">&gt;</span><br>
+						&nbsp;&nbsp;<span class="code-tag">&lt;/head&gt;</span><br>
+					</div>
+				</div><br>
+				<b>The HTML &lt;link&gt;</b> tag<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>សម្រាប់កំណត់ទំនាក់ទំនងរវាង HTML document នឹង external resource</i><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>&lt;link&gt; tag ភាគច្រើនប្រើដើម្បី link style sheet</i><br><br>
+				<b>The HTML &lt;meta&gt;</b> tag<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>ប្រើប្រាស់ដើម្បីបញ្ជាក់ការពិពណ៍ keyword, author នៃ document, last modified និង​ metadata ផ្សេងទៀត &lt;meta&gt; Tag-Examples of use</i><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>ការកំណត់ keyword សម្រាប់ search engines</i>
+				<div class="container">
+					<div class="code-block">
+						&lt;meta&gt; name="keywords" content="HTML, CSS, XML, JavaScript"&gt;
+					</div>
+				</div><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>កំណត់ description នៃ page</i>
+				<div class="container">
+					<div class="code-block">
+						&lt;meta&gt; name="description" content="Free Web tutorials on HTML and CSS"&gt;
+					</div>
+				</div><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>កំណត់ author នៃ page</i>
+				<div class="container">
+					<div class="code-block">
+						&lt;meta&gt; name="author" content="Hege Refsnes"&gt;
+					</div>
+				</div><br>
+				<b>The HTML &lt;meta&gt;</b> tag<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>&lt;meta&gt; Tag-Examples of use</i><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Refresh document every 30 second</i>
+				<div class="container">
+					<div class="code-block">
+						&lt;meta&gt; http-equiv="refresh" content="30"&gt;
+					</div>
+				</div><br>
+				<b>The HTML &lt;script&gt;</b> Element<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>ប្រើសម្រាប់កំណត់ client-side script ដូចជា JavaScript</i><br>
+				<br><hr>
+            </div>
+
+			<div id="lesson5" class="lessons">        
+    			<div class="editor-container">
+        			<div class="code-block">
+            			<h3 style="color: orange;">សរសេរកូដ HTML</h3>
+            				<textarea id="htmlCode" placeholder="សរសេរ HTML ទីនេះ..."></textarea>
+        			</div>
+        			<div class="code-block">
+            			<h3 style="color: orange;">សរសេរកូដ CSS</h3>
+            				<textarea id="cssCode" placeholder="សរសេរ CSS ទីនេះ..."></textarea>
+        			</div>
+					<!-- <div class="code-block">
+            			<h3 style="color: orange;">សរសេរកូដ CSS</h3>
+            				<textarea id="javaScriptCode" placeholder="សរសេរ CSS ទីនេះ..."></textarea>
+        			</div> -->
+    			</div>
+    				<button onclick="runCode()">បង្ហាញលទ្ធផល</button>
+    				<div class="output-container">
+        				<h3>លទ្ធផលដែលបានបង្ហាញ៖</h3>
+        				<iframe id="output"></iframe>
+    				</div>
+            	</div>
+        	</div>
+    	</div>
+	</div>
+	<!-- Footer Start -->
+	<footer class="page-footer">
+		<div class="footer-first-section">
+			<div class="container">
+				<div class="box-wrap">
+					<header>
+						<h3>អំពី</h3>
+					</header>
+					<p>ប្រសិនជាបងមានចម្ងល់ដែលទាក់ទងជាមួយនឹងគេហទំព័រយើងខ្ញុំអាចទំនាក់ទំនងមកកាន់យើងខ្ញុំបានគ្រប់ពេលវេលា...</p>
+
+					<h4><a href="tel:+855 968675739"><i class="fas fa-phone"></i> +855 968675739</a></h4>
+					<h4><a href="mailto:yet@gmail.com"><i class="fas fa-envelope"></i> yet@gmail.com</a></h4>
+					<h4><i class="fas fa-map-marker-alt"></i>ចោមចៅ2, ពោធិ៍សែនជ័យ, ភ្នំពេញ</h4>
+				</div>
+
+				<div class="box-wrap">
+					<header>
+						<h3>តំណភ្ជាប់</h3>
+					</header>
+					<ul>
+						<li><a href="/">ទំព័រដើម</a></li>
+						<li><a href="/course-listing.html">មេរៀន</a></li>
+						<li><a href="#">Courses</a></li>
+						<li><a href="/blog-edu-single.html">ព័ត៍មានទូទៅ</a></li>
+						<li><a href="/testimonials.html">ទំនាក់ទំនង</a></li>
+					</ul>
+				</div>
+
+				<div class="box-wrap">
+					<header>
+						<h3>មូលដ្ធានគ្រឹះ</h3>
+					</header>
+					<div class="recent-course-wrap">
+						<img src="images/Footer/footer5.png" alt="Ui/Ux Designing">
+						<a href=""><div class="course-name">
+							<h3>ពង្រឹងនូវគ្រឹះកូដយ៉ាងច្បាស់លាស់</h3>
+							<p><span>$50</span> ឥតគិតថ្លៃ</p>
+						</div></a>
+					</div>
+					<div class="recent-course-wrap">
+						<img src="images/Footer/footer3.png" alt="Ui/Ux Designing">
+						<a href=""><div class="course-name">
+							<h3>បណ្ដុំទៅដោយមេរៀនដ៏ពេញនិយម</h3>
+							<p><span>$50</span>ឥតគិតថ្លៃ</p>
+						</div></a>
+					</div>
+				</div>
+
+				<div class="box-wrap">
+					<header>
+						<h3>ទំនាក់ទំនង</h3>
+					</header>
+					<section class="quick-contact">
+						<input type="email" name="email" placeholder="Your Email*">
+						<textarea placeholder="Type your message*"></textarea>
+						<button>send message</button>
+					</section>
+				</div>
+
+			</div>
+		</div>
+		<!-- End of box-Wrap -->
+		<div class="footer-second-section">
+			<div class="container">
+				<hr class="footer-line">
+				<ul class="social-list">
+					<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href=""><i class="fab fa-twitter"></i></a></li>
+					<li><a href=""><i class="fab fa-skype"></i></a></li>
+					<li><a href=""><i class="fab fa-youtube"></i></a></li>
+					<li><a href=""><i class="fab fa-instagram"></i></a></li>
+				</ul>
+				<hr class="footer-line">
+			</div>
+		</div>
+		<!-- <div class="footer-last-section">
+			<div class="container">
+				<p>Copyright 2018 &copy; educationpro.com <span> | </span> Theme designed and developed by <a href="https://labtheme.com">Lab Theme</a></p>
+			</div>
+		</div> -->
+	</footer>
+</div>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="js/jquery.rateyo.js"></script>
+	<script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+    <script src="js/javaScript1.js"></script>
+	<script src="js/javaScript2.js"></script>
+</body>
+</html>

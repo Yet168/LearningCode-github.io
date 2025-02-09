@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearningCode</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.rateyo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" />
+	<link rel="stylesheet" type="text/css" href="inner-page-style.css">
+    <link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Battambang&display=swap" />
+	<link rel="shorcut icon" type="x-icon" href="images/Logo/logo4.png" style="height: 100px;">
+</head>
+<body>
+	<div id="page" class="site">
+			<header class="site-header">
+				<div class="main-header">
+					<div class="container">
+						<div class="logo-wrap" itemprop="logo">
+							<h2>សិក្សាគ្រឺះកូដនៅទីនេះ</h2>
+						</div>
+						<div class="nav-wrap">
+							<nav class="nav-desktop">
+								<ul class="menu-list">
+									<li><a href="/">ទំព័រដើម</a></li>
+									<li class="menu-parent">បណ្ដុំនៃមេរៀន
+										<ul class="sub-menu">
+											<li><a href="./course-listing.html">មេរៀនទាំងអស់</a></li>
+											<li><a href="./course-single.html">មេរៀនឥតគិតថ្លៃ</a></li>
+											<!-- <li class="menu-parent">Child
+												<ul class="sub-menu">
+													<li><a href="#">Grand-child</a></li>
+													<li><a href="#">Grand-child</a></li>
+												</ul>
+											</li> -->
+										</ul>
+									</li>
+									<!-- <li class="menu-parent">News
+										<ul class="sub-menu">
+											<li><a href="./events.html">Child</a></li>
+											<li><a href="./blog.html">Child</a></li>
+										</ul>
+									</li> -->
+									<!-- <li class="menu-parent">គម្រងរូបភាព
+										<ul class="sub-menu"> -->
+											<!-- <li><a href="#">Grand-child</a></li> -->
+											<!-- <li><a href="./gallery2.html">រូបភាព</a></li>
+										</ul> -->
+									</li>
+									<li><a href="./blog-edu-single.html">ព័ត៍មានទូទៅ</a></li>
+									<li><a href="./testimonials.html">ទំនាក់ទំនង</a></li>
+								</ul>
+							</nav>
+							<div id="bar">
+								<i class="fas fa-bars"></i>
+							</div>
+							<div id="close">
+								<i class="fas fa-times"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+	</div>
+
+    <div class="containers">
+        <!-- Sidebar -->
+        <div class="sidebars">
+            <h3>មេរៀនទី2៖ C#</h3>
+            <ul>
+				<li onclick="showLesson('lesson10')">សរសេរកូដនៅទីនេះ </li>
+                <li onclick="showLesson('lesson1')">សេចក្ដីផ្ដើមនៃភាសា C#</li>
+                <li onclick="showLesson('lesson2')">ចាប់ផ្ដើមសរសេរ Hello World</li>
+                <li onclick="showLesson('lesson3')">អថេរ (Variables) ក្នុងភាសា C#</li>
+				<li onclick="showLesson('lesson4')">សញ្ញា (Operator)</li>
+				<li onclick="showLesson('lesson5')">ការបញ្ចូលទិន្នន័យ (User Input)</li>
+                <li onclick="showLesson('lesson6')">Control Statement</li>
+                <li onclick="showLesson('lesson7')">សិក្សាអំពី Arrays</li>
+                <li onclick="showLesson('lesson8')">Array ច្រើនវិមាត្រ</li>
+				<li onclick="showLesson('lesson9')">Function</li>
+        </div>
+
+        <!-- Content -->
+        <div class="contents">
+            <div id="lesson1" class="lessons">
+                <h3>១/ សេចក្ដីផ្ដើមនៃភាសា C#</h3><br>
+                <p>C# (អានថា C Sharp)គឺជា Programming Language ដ៏ពេញនិយមមួយ ដែលត្រូវបាន Develop ឡើងដោយក្រុមហ៊ុន Microsoft (ដឹកនាំដោយលោក Anders Hejlsberg) ដែលដំណើរការនៅលើ .Net Framework។<br>
+                   .Net Framework គឺជា Class library ដ៏ធំមួយដែលមានផ្ទុកនូវ Class ជាច្រើនដើម្បីជាជំនួយទៅដល់ការសរសេរជាមួយ​ .Net Language ដូចជា C# ជាដើម។</p><br><hr>
+				<h3>១.១/ តើ C# អាចធ្វើអ្វីបានខ្លះ?</h3><br>
+				<p>C# អាចត្រូវបានគេប្រើប្រាស់ទៅតាមគោលបំណងផ្សេងៗគ្នាដូចខាងក្រោម៖
+                   -អាចយកមកប្រើបង្កើតជា Web Application <br> -អាចយកមកប្រើបង្កើតជា Desktop Application <br> -អាចយកមកប្រើបង្កើតជា Mobile Application <br> -ធ្វើជា Web Service Application <br> -អាចយកមកធ្វើជា Game (PC, Mobile Phone) និងផ្សេងៗជាច្រើនទៀត។ 
+                </p><br><hr>
+                <h3>១.២/ តើ IDE ណាខ្លះអាចសរសេរ C# បាន?</h3><br>
+				<p>ខាងក្រោមនេះគឺជា IDE មួយចំនួនដែលគេនិយមយកមកសរសេរភាសា C#៖<br>
+                    -Microsoft Visual Studio (Recommend) <br> -Visual Studio Code <br> -Rider <br> -MonoDevelop <br> -Eclipse <br> -Atom។
+                 </p><br><hr>
+                <h3>១.៣/ Syntax នៃភាសា C#</h3>
+				<div class="container">
+					<div class="code-block">
+						using System;<br>namespace HelloWorld{<br>&nbsp;&nbsp;&nbsp;&nbsp;class Program{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;static void Main(string[ ] args){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//កន្លែងសម្រាប់សរសេរកូដក្នុង main method​<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}
+					</div>
+				</div>
+                <p>-using System:បានន័យថាយើងបានហៅ manespace ដែលមានឈ្មោះថា System យកមកប្រើប្រាស់ដែលមានផ្ទុកនូវ class ជាច្រើន។ <br> -namespace: វាប្រៀបបានជា container មួយដែលគ្រប់គ្រងកូដទាំងមូលនៅក្នុង project ដែលមានឈ្មោះថា HelloWorld។ <br> -static void Main(): គឺដូចគ្នាទៅនឹង main function ក្នុងភាសា C/C++ ដែល។</p><br><hr>
+				<h3>១.៤/ ការ Output តម្លៃណាមួយ</h3><br>
+				<p><b>#ឧទាហរណ៍៖​</b><br></p>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int a = 10, b = 200;<br>
+				<p>ដើម្បី Output តម្លៃរបស់​ a និង b យើងមានរបៀបផ្សេងៗដូចខាងក្រោម៖<br>
+					-វិធីទី១៖​ Console.WriteLine("a="+a+"\tb ="+b); <br> -វិធីទី២៖​ Console.WriteLine("a= {0}\tb = {1}",a,b); <br> -វិធីទី៣៖​ Console.WriteLine($"a= {a}\tb = {b}"; 
+				</p><br>
+            </div>
+            <div id="lesson2" class="lessons">
+                <h3>២/ ចាប់ផ្ដើមសរសេរ C#</h3>
+                <div class="container">
+					<div class="code-block">
+						static void Main(string[ ] args){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Hello World");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Readkey();<br>}<br>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<p><b><pre>Hello World</pre></b></p>
+				</div><br><hr>
+				<h3>២.១/ ការបង្ហាញ Message លើ Console</h3><br>
+				<p>នៅក្នុងការបង្ហាញ Message ណាមួយមកលើផ្ទាំង Console ចំពោះភាសា C# អ្នកអាចប្រើតាមវិធីដូចខាងក្រោម៖<br>
+                   ប្រើ Console.WriteLine() ឬ Console.Write();<br>
+				   -Console.WriteLine(): ប្រើប្រាស់សម្រាប់បង្ហាញ Message ដែលមានការចុះបន្ទាត់នៅខាងចុង Message។ <br> -Console.WriteLine(): ប្រើប្រាស់បម្រាប់បង្ហាញ​ Message ប៉ុន្តែមិនមានការចុះមន្ទាត់នៅខាងចុង Message ឡើយ។ <br><br>
+                <b>#ឧទាហរណ៍៖​</b>សរសេរកម្មវិធីមួយដើម្បីបង្ហាញទិន្នន័យដូចខាងក្រោម៖
+                   ID: 1001 <br> Name: Kry Yet <br> Gender: Male <br> Age: 22 <br><br>
+                <b>ដំណោះស្រាយ៖​</b><br>
+                <div class="container">
+					<div class="code-block">
+						class Program{<br>&nbsp;&nbsp;&nbsp;&nbsp;static void Main(string[ ] args){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("ID:1001");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Name:Sok Vichey");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Gender:Male");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Age:22");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Readkey();<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}
+					</div>
+				</div>
+				</p><br><hr>
+				<h3>២.២/ ការកាត់ក្បៀស</h3><br>
+				<p><b>#ឧទាហរណ៍៖​</b><br></p>
+				<div class="container">
+					<div class="code-block">
+						class Program{<br>&nbsp;&nbsp;&nbsp;&nbsp;static void Main(string[ ] args){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;double salay = 250.123231;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine($"Salary = ${salary:0.00}");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<p><b><pre>Salary = $250.12</pre></b>
+				</div><br>
+				<p>ឬអ្នកអាចកំណត់ក្បៀសក្រោយខ្ទង់ដោយប្រើប្រាស់ String.Format() តាមឧទាហរណ៍ខាងលើយើងអាចសរសេរ៖</p>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine($"double = ${String.Format("{0:#.00}",salary)}");
+					</div>
+				</div><br>
+				<p>ម៉្យាងវិញទៀតអ្នកក៏អាចប្រើប្រាស់ method ដែលមានឈ្មោះថា ToString() ដូចខាងក្រោម៖</p>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine($"double = ${String.ToString("{0.00}")}");
+					</div>
+				</div>
+				<br><hr>
+            </div>
+            <div id="lesson3" class="lessons">
+                <h3>៣/ អថេរ (Variables) ក្នុងភាសា​ C#</h3><br>
+                <p><b>Variable </b>គឺប្រៀបបានជា Container មួយដែលត្រូវបានគេប្រើប្រាស់ក្នុងគោលបំណងដើម្បីរក្សាទុកទិន្នន័យផ្សេងៗ។នៅក្នុងភាសា C# មានប្រភេទ Variable ជាច្រើនដែលត្រូវបានកំណត់ដោយ keyword ដូចខាងក្រោម៖</p>
+				<p>-int: អាចឲ variable ផ្ទុកទិន្នន័យជាចំនួនគត់(integer) <br> -double: អាចឲ variable ផ្ទុកទិន្នន័យជាចំនួនទសភាគ​ <br>-char: អាចឲ​ variable ផ្ទុកទិន្នន័យជាអក្សរមួយតួរ<br>-string: អាចឲ variable ផ្ទុកទិន្នន័យជាពាក់្យ ឬឃ្លា<br>-bool: អាចឲ​ variable ផ្ទុកតម្លៃតែពីរប៉ុណ្ណោះគឺ ពិត(True) និងមិនពិត(False)<br>-និងមានផ្សេងៗទៀតដូចជា៖ short, byte, float,...។</p><br><hr>
+				<h3>៣.១/ ការប្រកាសអថេរ (Variable)</h3>
+				<div class="container">
+					<div class="code-block">
+						Syntax<br>&nbsp;&nbsp;&nbsp;&nbsp;dataType varName = value;<br>or<br>&nbsp;&nbsp;&nbsp;&nbsp;dataType varName;<br>
+					</div>
+				</div><br>
+				<p><b>#ឧទាហរណ៍៖​</b><br>int id;<br>string name="NULL"<br>double salary;<br>char grade;<br>byte NO=0;</p><br><hr>
+				<h3>៣.២/ Type Casting</h3><br>
+				<p><b>Type Casting</b> គឺជាការបម្លែង(convert)ពីទិន្នន័យនៃប្រភេទមួយឲទៅជាប្រភេទមួយផ្សេងទៀត។នៅក្នុងភាសា C# គែបែងចែកការ convert នេះជាពីរគឺ <b>implicit casting</b> និង<b>explicit casting។</b></p><br>
+				<p><b>-Implicit Casting:</b> គឺជាការ Convert ពីប្រភេទទិន្នន័យដែលមានទំហំតូចទៅជាប្រភេទទិន្នន័យដែលមានទំហំធំ។ការ Conver នេះគឺមានលក្ខណះជាស្វ័យប្រវត្តិ។</p>
+                <p><b>#ឧទាហរណ៍៖​</b>int num1=10;<br>double num2=num1;<br>//num1 ត្រូវបាន convert ទៅជាប្រភេទ double<br></p>
+                <p><b>-Explicit Casting:</b> គឺជាការ Convert ពីប្រភេទទិន្នន័យដែលមានទំហំធំទៅជាប្រភេទទិន្នន័យដែលមានទំហំតូច។ការ Conver នេះគឺតម្រូវឲអ្នកបញ្ជាក់ពីប្រភេទដែលអ្នកចង់ Convert ឲបានច្បាស់លាស់។</p>
+                <p><b>#ឧទាហរណ៍៖​</b>double num1=10;<br>int num2=(int)num1;<br>//num1 ត្រូវបាន convert ទៅជាប្រភេទ int<br></p><br>
+                <p>នៅក្នុង​ <b>emplicit casting</b> នេះ C# ក៏បានផ្ដល់ឲអ្នកអាចប្រើប្រាស់នូវ Method មួយចំនួនសម្រាប់ការ​ Convert នេះបានផងដែរ។</p>
+				<div class="container">
+					<div class="code-block">
+						-Convert.ToBoolean(): ការ convert ទៅជា bool <br>-Convert.ToDouble(): ការ convert ទៅជា double <br>-Convert.ToInt32(): ការ convert ទៅជា int <br>-Convert.ToInt64()): ការ convert ទៅជា long <br>-Convert.ToString(): ការ convert ទៅជា string <br>
+					</div>
+				</div><br>
+				<p><b>#ឧទាហរណ៍៖​</b> ខាងក្រោមនេះជាការ convert ពី int ទៅជា string <br>int id=10001;<br>string id=Convert.ToString(id);<br></p>
+                <br><hr>
+            </div>
+			<div id="lesson4" class="lessons">
+                <h3>៤/ សញ្ញា (Operator)</h3><br>
+                <p><b>សញ្ញា(Operator)</b> គឺត្រូវបានគេប្រើប្រាស់ដើម្បីធ្វើប្រមាណវិធីនៃ variable ឬក៏តម្លៃណាមួយ។មិនខុសអ្វីពី operator ដែលអ្នកបានសិក្សានៅក្នុងភាសា C/C++ ឡើយដែលមានដូចជា<b>Arithmetic Operators, Assignment Operators, Comparison Operators, និងLogical Operators។</b><br><br>
+					  -Arithmetic Operators: +, -, *, /, %, ++, -- <br> -Assignment Operators: =, +=, -=, *=, /=, %=, <<=, ...<br>-Conparison Operators: ==, !=, >, <, >=, <=<br>-Logical Operators: &&, ||, !<br>
+				</p><br><hr>
+            </div>
+            <div id="lesson5" class="lessons">
+                <h3>៥/ ការបញ្ចូលទិន្នន័យ (User Input)</h3><br>
+                <p>អ្នកប្រាកដជាបានដឹងរួចមកហើយអំពី Console.WriteLine() ឬConsole.Write() គឺយើងប្រើប្រាស់វាដើម្បី Output ទិន្នន័យមកលើផ្ទាំង console។ឥឡូវនេះយើងនឹងប្រើប្រាស់ Console.ReadLine() ដើម្បីទទួលយកការ Input ណាមួយពី User តាមរយះ Keyboard វិញម្ដង។<br><br>
+					<b>សម្គាល់៖​ </b>នៅពេលដែលអ្នកប្រើ​ Console.ReadLine() ដូច្នេះរាល់ទិន្នន័យដែលអ្នកបានបញ្ចូលនឹងចាត់ទុកជា string ទាំងអស់។ហេតុនេះហើយយើងក៏មានវិធីក្នុងការបម្លែងពី string ឲទៅជាប្រភេទទិន្នន័យណាមួយដែលយើងចង់បានផងដែរ។
+				</p><br><hr>
+				<h3>៥.១/ ការបញ្ចូលទិន្នន័យ Integer</h3><br>
+				<p>អ្នកប្រាកដជាបានដឹងរួចមកហើយអំពី Console.ReadLine() គឺទិន្នន័យដែលវានឹងទទួលគឺវាមានលក្ខណះជា string។ដូច្នេះខាងក្រោមនេះជារបៀបនៃការ convert ពី string ទៅជា​ int។</p><br>
+				<p><b>#ឧទាហរណ៍៖​</b><br></p>
+				&nbsp;&nbsp;int age;
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age = Convert.ToInt32(Console.ReadLine());
+					</div>
+				</div>
+				<div class="container">
+					<div class="code-block">
+						ឬ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age = Int32.Parae(Console.ReadLine());
+					</div>
+				</div>
+				<div class="container">
+					<div class="code-block">
+						ឬ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age = int.Parae(Console.ReadLine());
+					</div>
+				</div><br><hr>
+				<h3>៥.២/ ការបញ្ចូលទិន្នន័យជា Double</h3><br>
+				<p><b>#ឧទាហរណ៍៖​</b><br></p>
+				&nbsp;&nbsp;double num;
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num = Convert.ToDouble(Console.ReadLine());
+					</div>
+				</div>
+				<div class="container">
+					<div class="code-block">
+						ឬ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num = Double.Parae(Console.ReadLine());
+					</div>
+				</div>
+				<div class="container">
+					<div class="code-block">
+						ឬ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num = double.Parae(Console.ReadLine());
+					</div>
+				</div><br><hr>
+				<h3>៥.៣/ ការបញ្ចូលទិន្នន័យជា Char</h3><br>
+				<p><b>#ឧទាហរណ៍៖​</b><br></p>
+				&nbsp;&nbsp;double num;
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c = Convert.ToChar(Console.ReadLine());
+					</div>
+				</div>
+				<div class="container">
+					<div class="code-block">
+						ឬ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c= Char.Parae(Console.ReadLine());
+					</div>
+				</div>
+				<div class="container">
+					<div class="code-block">
+						ឬ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c = Char.Parae(Console.ReadLine());
+					</div>
+				</div><br><hr>
+				<h3>៥.៤/ ការបញ្ចូលទិន្នន័យជា string</h3><br>
+				<p><b>#ឧទាហរណ៍៖​</b><br></p>
+				&nbsp;&nbsp;string name;
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name = Convert.ReadLine();
+					</div>
+				</div><br><hr>
+            </div>
+			<div id="lesson6" class="lessons">
+                <h3>៦/ Control Statement ក្នុង C#</h3><br>
+                <p>នៅក្នុងមេរៀន Control Statement របស់ C# នេះគឺមានលក្ខណះស្មើរតែដូចគ្នាទាំងស្រុងទៅនឹង Control Statement នៅក្នុងភាសា C/C# ផងដែរ។ដូច្នេះ Admin មិនបានលម្អិត ឬពន្យល់ឲបានគ្រប់ជ្រុងជ្រោយនោះឡើយ។</p><br><hr>
+				<h3>៦.១/ If Else Contition</h3><br>
+				<b>Syntax:</b>
+				<div class="container">
+					<div class="code-block">
+						if(condition-expression){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//statement 1 will work if boolean if "true"<br>}else{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//statement 2 will work if boolean if "false"<br>}
+					</div>
+				</div>
+				<br><hr>
+                <h3>៦.២/ Switch Statement</h3><br>
+				<b>Syntax:</b>
+				<div class="container">
+					<div class="code-block">
+						switch(expression){<br>&nbsp;&nbsp;&nbsp;&nbsp;case value1:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//statement1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//break;<br>&nbsp;&nbsp;&nbsp;&nbsp;case value2:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//statement2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>&nbsp;&nbsp;&nbsp;&nbsp;default:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//this block runs when no case matches<br>}
+					</div>
+				</div>
+				<br><hr>
+                <h3>៦.៣/ Loop Statement </h3><br>
+				<b>Syntax: (for loop)</b>
+				<div class="container">
+					<div class="code-block">
+						for(initialization;expression;iterator){<br>&nbsp;&nbsp;&nbsp;&nbsp;//loop statement<br>}
+					</div>
+				</div>
+                <p>-initialization:សំដៅទៅលើការកំណត់តម្លៃចាប់ផ្ដើម <br> -expression:ជាការកំណត់នូវលក្ខខណ្ឌទៅលើ loop <br> -iterator:ជា​​ increment ឬdecrement</p><br><hr>
+				<h3>៦.៤/ Foreach Loop Statement </h3><br>
+				<p><b>Foreach Loop</b> ត្រូវបានគេប្រើប្រាស់ដើម្បីធ្វើការ​ loop ទៅលើ Element (ធាតុ) របស់ Array.<br></p> 
+				<b>Syntax:</b>
+				<div class="container">
+					<div class="code-block">
+						foreach(type var_Name in array/collection){<br>&nbsp;&nbsp;&nbsp;&nbsp;//Code block to be executed<br>}
+					</div>
+				</div>
+				<p><b>#ឧទាហរណ៍៖​ </b>គេមាន int[ ] num = {11,22,33,44,55}។<br>ចូរសរសេរ statement ដោយប្រើប្រាស់ Loop ដើម្បីបង្ហាញធាតុនៃ array ខាងលើនេះ។<br>
+				<b>ដំណោះស្រាយ:</b><br>
+				<div class="container">
+					<div class="code-block">
+						int[ ] num = {11,22,33,44,55};<br>
+						&nbsp;&nbsp;&nbsp;foreach(int item in num){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Write("\t"+item);<br>&nbsp;&nbsp;&nbsp;}<br>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<p><b><pre>11 22 33 44 55<br></pre></b>
+				</div>
+				<br></p>
+            </div>
+			<div id="lesson7" class="lessons">
+				<h3>៧/ សិក្សាអំពី Array </h3><br>
+				
+					<p><b>Arrays</b> គឺជាបណ្តុំ (collection) ទិន្នន័យជាច្រើន ដែលមានប្រភេទទិន្នន័យ (data type) ដូចគ្នា។នៅក្នុងមេរៀននេះយើងនឹងសិក្សាអំពីរបៀបនៃការបង្កើត, ការ initialize និងការចូល access ធាតុរបស់​ array។</p><br><hr>
+				
+				<h3>៧.១/ ការបង្កើត Array </h3>
+				<div class="container">
+					<div class="code-block">
+						Syntax:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataType[ ] array_name;<br>
+					</div>
+				</div>
+				<p><b>#ឧទាហរណ៍៖​</b><br></p>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[ ] id;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string[ ] name;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;double[ ] salary;<br><br>
+				<p>ខាងលើនេះជាការបង្កើត​ arrays ប៉ុន្តែមិនទាន់អាចយកមកប្រើប្រាស់ផ្ទុកទិន្នន័យបាននោះទេ។លុះត្រាតែអ្នកកំណត់ចំនួនទីតាំង (allocate memory)/ទំហំឲវា។</p><br><hr>
+				<h3>៧.២/ ការ Initialize ទៅឲ Array </h3><br>
+				<p>ខាងក្រោមនេះគឺជាការផ្ដល់/កំណត់តម្លៃចាប់ផ្ដើមទៅឲ array ដែលយើងបានបង្កើតហើយភ្លាម។</p>
+				<p><b>#ឧទាហរណ៍៖​</b><br></p>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float[ ] score = { 60.0f, 89.12f, 97.78f, 40.12f};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string[ ] carBrand = { "BMW", "Ferrari", "AUDI"};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[ ] id = {1001, 1002, 1003, 1004};<br>ឬ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[ ] id = new int[4];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id[0] = 1001;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id[1] = 1002;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id[2] = 1003;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id[3] = 1004;<br>
+					</div>
+				</div>
+				<br><hr>
+				<h3>៧.៣/ ការកំណត់ទំហំឲ Array </h3>
+				<div class="container">
+					<div class="code-block">
+						Syntax:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataType[ ] array_Name = new dataType[size];<br>
+					</div>
+				</div>
+				<p><b>#ឧទាហរណ៍៖​</b><br></p>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[ ] id = new int[10];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string[ ] name = new string[100];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;double[ ] salary = new double[30];<br>
+					</div>
+				</div><br><hr>
+				<h3>៧.៤/ ការ Access ធាតុរបស់ Arrays </h3><br>
+				<p>អ្នកអាចចូលទៅ access ធាតុរបស់​ array ណាមួយបានតាមរយះការប្រើប្រាស់​ index។</p><br>
+				<p><b>#ឧទាហរណ៍៖​</b><br></p>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[ ] age = {18,20,23,16,15};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Write(age[2]);<br>ឬ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Write(age.GetValue(2));<br>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<p><b><pre>23<br></pre></b>
+				</div>
+				<br><hr>
+				<h3>៧.៥/ Arrays ពីរវិមាត្រ</h3><br>
+				<div class="container">
+					<div class="code-block">
+						Syntax:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataType[,] arr_name = new dataType[row,col]<br>
+					</div>
+				</div>
+				<p><b>#ឧទាហរណ៍៖​</b><br></p>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[,] num = { {1,2}, {3,4}, {5,6} };<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 0; i < num.GetLength(0); i++){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int j = 0; j < num.GetLength(1); j++) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Write("\t"+num[i,j]);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+					</div>
+				</div>
+				<br><hr>
+				<h3>៧.៦/ Function សំខាន់ៗក្នុង​ Array</h3><br>
+				<p>តោះមកដឹង method/function សំខាន់ៗមួយចំនួនដែលអាចប្រើប្រាស់ជាមួយ array នៅក្នុងភាសា C#។<br>
+					-GetLength(int dimension): ជា method ប្រើប្រាស់សម្រាប់បង្ហាញទំហំរបស់ array ណាមួយ។ ចំពោះ dimension សំដៅទៅលើតម្លៃ index នៃវិមាត្ររបស់​ array។<br>
+				<p><b>#ឧទាហរណ៍៖​</b></p>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[ ] num = {1,2,3,4,5,6};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Write(num.GetLength(0));<br>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<p><b><pre>6<br></pre></b>
+				</div>
+				<b>សម្គាល់៖​ </b>ត្រង់ចំណុច​ (0) បើវាជា array 2វិមាត្រ នោះដាក់លេខសូន្យតំណាងឲ length របស់វិមាត្រទី១។
+				</p><br>
+				<p>ម៉្យាងវិញទៀតអ្នកក៏អាចប្រើប្រាស់ Property ដែលមានឈ្មោះថា Length ក្នុងការរកទំហំសរុបរបស់​ array ក៏បានដែរ។</p>
+				<p><b>#ឧទាហរណ៍៖​</b></p>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[ ] num = {1,2,3,4,5,6};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Write(num.Length);<br>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<p><b><pre>6<br></pre></b>
+				</div>
+				<p>-Reverse(arrayName): ជា method ប្រើប្រាស់សម្រាប់ត្រឡប់ (reverse) គ្រប់ Element ទាំងអស់នៃ array(1វិមាត្រ)។</p>
+				<p><b>#ឧទាហរណ៍៖​</b></p>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[ ] num = {1,2,3,4,5,6};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Array.Reverse(num);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach(int item in num){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Write("\t" + item);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<p><b><pre>6 5 4 3 2 1<br></pre></b>
+				</div>
+				<p>-Sort(arrayName): ជា method ប្រើប្រាស់សម្រាប់តម្រៀបគ្រប់ធាតុទាំងអស់ដែលនៅក្នុង array(1វិមាត្រ)។ ជា​ default វាតម្រៀបពីតូចទៅធំ និង​ a-z។</p>
+				<p><b>#ឧទាហរណ៍៖​</b></p>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string[ ] carBrand = { "BMW", "Ferrari", "AUDI"};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Array.Sort(carBrand);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach(string item in carBrand){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Write("\t" + item);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<p><b><pre>AUDI BMW Ferrari<br></pre></b>
+				</div>
+				<p>-ToString(): ជា method ប្រើប្រាស់សម្រាប់ Return object ណាមួយដែលអ្នកបានកំណត់ឲទៅជា string។</p>
+				<p><b>#ឧទាហរណ៍៖​</b></p>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float[ ] score = { f0.0f, 89.12f, 97.76f, 40.12f};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string sc = score[0].ToString();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Write(sc);<br>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<p><b><pre>60<br></pre></b>
+				</div>
+				<p>-CopyTo(array2,startIndex): ជា method ប្រើប្រាស់សម្រាប់ Copy គ្រប់ធាតុទាំងអស់នៃ array(1វិមាត្រ)ទី១ ទៅឲ array2 ដោយចាប់ផ្ដើមពី startIndex រហូតដល់ index ចុងក្រោយ។</p>
+				<p><b>#ឧទាហរណ៍៖​</b></p>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[ ] num1 = { 1,2,3,4,5,6 };<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[ ] num2 = new int[6];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num1.CopyTo(num2, 0);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach (int item in num2){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Write("\t" + item);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<p><b><pre>1 2 3 4 5 6<br></pre></b>
+				</div><br>
+				<p>បន្ថែមពីនេះនៅក្នុង C# ក៏មាននូវ namespace មួយដែលមានឈ្មោះថា System.Linq ដែលវាក៏មាននូវ method សំខាន់ៗសម្រាប់ប្រើជាមួយ array ផងដែរ។ Method ទាំងនោះមានដូចជា៖ Min, Max, Average, Sum។ល។</p>
+				<p><b>#ឧទាហរណ៍៖​</b></p>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[ ] num1 = { 1,2,3,4,5,6 };<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int sum = num.Sum();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Write($"Sum = {sum}");<br>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<p><b><pre>Sum = 21<br></pre></b>
+				</div>
+				<br><hr>
+			</div>
+			<div id="lesson8" class="lessons">
+				<h3>៨/ Array ច្រើនវិមាត្រ </h3><br>
+				<p>ចំពោះ array ច្រើនវិមាត្រ(multidimension arrays) នៅក្នុងភាសា C# គេច្រើនតែសិក្សាទៅលើ array ២វិមាត្រ ឬត្រឹម៣វិមាត្រប៉ុណ្ណោះ។ ទិន្នន័យនឹងត្រូវបានផ្ទុកជាតារាងដែលមានជួរដេក(row) និងជួរឈរ(column) ដែលត្រូវបានគេហៅថា <q>ម៉ាទ្រីស(martix)</q>។</p><br><hr>
+				<h3>៨.១/ Jagged Array</h3><br>
+				<p>Jagged Array គឺជា array ដែល column នីមួយៗរបស់វាមានទំហំផ្សេងៗគ្នា។</p>
+				<p><b>#ឧទាហរណ៍៖​</b></p>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[ ][ ] id = new int[3][ ];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id[0] = new int[ ]{ 1, 2, 3, 4, 5};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id[1] = new int[ ]{6, 7};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id[2] = new int[ ]{ 9, 10, 11};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 0; i < id.Length; i++){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int j = 0; j < id[i].Length; j++){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Write("\t"+ id[i][j]);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					</div>
+				</div>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<p><b><pre>1 2 34 5<br>6 7<br>9 10 11<br></pre></b>
+				</div><br>
+				<p>យើងក៏មានវិធីសាស្រ្តជាច្រើនក្នុងការ​ Initialize តម្លៃទៅឲ Jagged Array ដែរ។</p><br>
+				<p><b>#ឧទាហរណ៍៖​</b></p>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[ ][ ] id = new int[2][ ];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id[0] = new int[ ]{ 1, 2, 3, 4, 5};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id[1] = new int[ ]{6, 7};<br>ឬ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id[ ][ ] = new int[2][ ]{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new int[ ] { 1, 2, 3, 4, 5 },<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new int[ ] { 6, 7 }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br>
+					</div>
+				</div>
+				<br><hr>
+			</div>
+			<div id="lesson9" class="lessons">
+				<h3>៩/ Function នៅក្នុង C# </h3><br>
+				<p><b>Function </b>គឺជាសំណុំ/block កូដដែលត្រូវបានបង្កើតឡើងដើម្បីដំណើរការរួមគ្នានៃការងារជាក់លាក់ណាមួយ។ នៅក្នុង​ function នៃភាសា C# មាននូវ component សំខាន់ៗដូចជា៖<br>
+					<b>-Function Name:</b> ឈ្មោះរបស់ function។ <br> <b>-Return Type:</b> ត្រូវបានកំណត់ប្រភេទទិន្នន័យជាក់លាក់ពេលដែលប្រើប្រាស់ជាមួយ Returned-function។<br> <b>-Body of Function:</b> ជាកន្លែងដែលត្រូវសរសេរកូដផ្សេងៗដែលទីតាំងស្ថិតក្នុងសញ្ញា <q>braces</q>({})។<br> <b>-Access-Specifier:</b> ជាការកំណត់កម្រិតនៃការ Access ក្នុងករណីដែលមានការ​ access ពីខាងក្រៅ class ជាដើម។<br> <b>-Parameters:</b> ជាបណ្ដុំនៃ argument ផ្សេងៗដែលត្រូវបានប្រើនៅក្នុងការផ្ទេរទិន្នន័យពី function មួយទៅ function ផ្សេងទៀត។
+				</p><br><hr>
+				<h3>៩.១/ របៀបនៃការបង្កើត Function</h3><br>
+				<div class="container">
+					<div class="code-block">
+						Syntax:<br>&nbsp;&nbsp;&nbsp;&nbsp;accessSpecifier returnType funcName(parameters){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//body of function<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//return statement (returned-function)<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+					</div>
+				</div>
+				<p><b>#ឧទាហរណ៍៖​</b></p>
+				<div class="container">
+					<div class="code-block">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void sum(int num1, int num2){}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private string getName(){return name;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void average(double total){}<br>
+					</div>
+				</div>
+				<p><b>#ឧទាហរណ៍៖​ </b>ចូរគណនានៃផលបូកពីរចំនួនគត់ដោយប្រើប្រាស់ function នៅក្នុងភាសា​ C#។</p><br>
+				<b>#ដំណោះស្រាយ៖​</b>
+				<div class="container">
+					<div class="code-block">
+						using System;<br>namespace testConsole{<br>&nbsp;&nbsp;&nbsp;&nbsp;class Program{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static int sum(int n1, int n2){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return n1 + n2;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;static void Main(string[ ] args){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int num1 = 10, num2 = 20;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int total = sum(num1, num2);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Total = " + total);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Readkey();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}<br>
+					</div>
+				</div><br>
+				<p><b>សម្គាល់៖​ </b>យើងប្រើជា static ដោយសារតែ function នេះនឹងត្រូវ call នៅក្នុង main function ដែលជាប្រភេទ static ដូចគ្នាដែរ។</p>
+				<br><hr>
+				<h3>៩.២/ Function Call by Reference</h3><br>
+				<p>នៅក្នុងភាសា C# មាននូវ keyword មួយគឺ ref ដែលត្រូវបានប្រើប្រាស់វា​ ដើម្បីកំណត់ទៅលើ argument ឲក្លាយទៅជាប្រភេទ reference។បានន័យថា argument ដែលជាប្រភេទ reference នឹងទទួលយក address របស់ argument ផ្សេងទៀតដោយមិន Copy Valu ដូចដែល Call by Value នោះឡើយ។</p>
+				<b>#ឧទាហរណ៍៖​</b>
+				<div class="container">
+					<div class="code-block">
+						using System;<br>namespace testConsole{<br>&nbsp;&nbsp;&nbsp;&nbsp;class Program{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void newNum(ref int n){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n +=10;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;static void Main(string[ ] args){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int num = 10,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLIne("Old Num ="+ num);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newNum(ref num);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("New Num = " + num);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Readkey();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}<br>
+					</div>
+				</div><br>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<p><b><pre>Old Num + 10<br>New Num = 20<br></pre></b>
+				</div><br><hr>
+				<h3>៩.៣/ Function Call by Value</h3><br>
+				<p><b>Function call by value </b>គឺជាការប្រើប្រាស់នូវ concept នៃការ copy តម្លៃដើមរបស់ argument សែលបាន pass ទៅឲវានោះ។</p><br>
+				<b>#ឧទាហរណ៍៖​</b>
+				<div class="container">
+					<div class="code-block">
+						class Program{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void newNum(int n){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n +=10;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Inside newNum():" + n);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;static void Main(string[ ] args){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int num = 10,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newNum(num);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Outside newNum():"+ num);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Readkey();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}<br>
+					</div>
+				</div><br>
+				<b>#ចម្លើយ៖​</b>
+				<div class="container">
+					<p><b><pre>Inside newNum(): 20<br>Outside newNum(): 10<br></pre></b>
+				</div><br>
+			</div>
+			<div id="lesson10" class="lessons">
+			<div class="editor-container">
+				<div class="code-block">
+				<h3>កម្មវិធីសរសេរកូដ C#</h3>
+				<h3 style="color: orange;">សរសេរកូដ C#</h3>
+				<textarea id="csharpCode" placeholder="សរសេរ C# ទីនេះ...">
+				using System;
+					class Program {
+						static void Main() {
+							Console.WriteLine("សួស្តី ពិភពលោក!");
+						}
+					}</textarea>
+				<button onclick="showCode()">បង្ហាញលទ្ធផល</button>
+				<div class="output" id="output" ></div>
+				</div>
+			</div>
+			</div>
+        </div>
+    </div>
+
+	<!-- Footer Start -->
+	<footer class="page-footer">
+		<div class="footer-first-section">
+			<div class="container">
+				<div class="box-wrap">
+					<header>
+						<h2>អំពី</h2>
+					</header>
+					<p>ប្រសិនជាបងមានចម្ងល់ដែលទាក់ទងជាមួយនឹងគេហទំព័រយើងខ្ញុំអាចទំនាក់ទំនងមកកាន់យើងខ្ញុំបានគ្រប់ពេលវេលា...</p>
+
+					<!-- <h4><a href="tel:+855 968675739"><i class="fas fa-phone"></i> +855 968675739</a></h4>
+					<h4><a href="mailto:yet@gmail.com"><i class="fas fa-envelope"></i> yet@gmail.com</a></h4>
+					<h4><i class="fas fa-map-marker-alt"></i>ចោមចៅ2, ពោធិ៍សែនជ័យ, ភ្នំពេញ</h4> -->
+				</div>
+
+				<div class="box-wrap">
+					<header>
+						<h2>តំណភ្ជាប់</h2>
+					</header>
+					<ul>
+						<li><a href="/">ទំព័រដើម</a></li>
+						<li><a href="/course-listing.html">មេរៀន</a></li>
+						<li><a href="#">Courses</a></li>
+						<li><a href="/blog-edu-single.html">ព័ត៍មានទូទៅ</a></li>
+						<li><a href="/testimonials.html">ទំនាក់ទំនង</a></li>
+					</ul>
+				</div>
+
+				<div class="box-wrap">
+					<header>
+						<h2>មូលដ្ធានគ្រឹះ</h2>
+					</header>
+					<div class="recent-course-wrap">
+						<img src="images/Footer/footer5.png" alt="Ui/Ux Designing">
+						<a href=""><div class="course-name">
+							<h3>ពង្រឹងនូវគ្រឹះកូដយ៉ាងច្បាស់លាស់</h3>
+							<p><span>$50</span> ឥតគិតថ្លៃ</p>
+						</div></a>
+					</div>
+					<div class="recent-course-wrap">
+						<img src="images/Footer/footer3.png" alt="Ui/Ux Designing">
+						<a href=""><div class="course-name">
+							<h3>បណ្ដុំទៅដោយមេរៀនដ៏ពេញនិយម</h3>
+							<p><span>$50</span>ឥតគិតថ្លៃ</p>
+						</div></a>
+					</div>
+				</div>
+
+				<div class="box-wrap">
+					<header>
+						<h2>ទំនាក់ទំនង</h2>
+					</header>
+						<h4><a href="tel:+855 968675739"><i class="fas fa-phone"></i> +855 968675739</a></h4>
+						<h4><a href="mailto:yet@gmail.com"><i class="fas fa-envelope"></i> yet@gmail.com</a></h4>
+						<h4><i class="fas fa-map-marker-alt"></i>ចោមចៅ2, ពោធិ៍សែនជ័យ, ភ្នំពេញ</h4>
+					
+				</div>
+
+			</div>
+		</div>
+		<!-- End of box-Wrap -->
+		<div class="footer-second-section">
+			<div class="container">
+				<hr class="footer-line">
+				<ul class="social-list">
+					<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href=""><i class="fab fa-twitter"></i></a></li>
+					<li><a href=""><i class="fab fa-skype"></i></a></li>
+					<li><a href=""><i class="fab fa-youtube"></i></a></li>
+					<li><a href=""><i class="fab fa-instagram"></i></a></li>
+				</ul>
+				<hr class="footer-line">
+			</div>
+		</div>
+		<!-- <div class="footer-last-section">
+			<div class="container">
+				<p>Copyright 2018 &copy; educationpro.com <span> | </span> Theme designed and developed by <a href="https://labtheme.com">Lab Theme</a></p>
+			</div>
+		</div> -->
+	</footer>
+</div>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="js/jquery.rateyo.js"></script>
+	<script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+    <script src="js/javaScript1.js"></script>
+	<script src="js/javaScript2.js"></script>
+</body>
+</html>
